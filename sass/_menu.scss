@@ -1,0 +1,156 @@
+.menu{
+	position: fixed;
+	top: width(70px);
+	width: 100%;
+	z-index: 100;
+	.open_menu{
+		background: #fff;
+		position: absolute;
+		width: 100%;
+		height: width(446px);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding: width(24px) width(36px);
+	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .4);
+		.row_1{
+			margin-left: width(96px);
+		}
+		.row_1, .row_2, .row_3, .row_4{
+			width: width(192px);
+			height: width(398px);
+			h1{
+			cursor: pointer;
+			color: rgba(0,0,0,.4);
+			margin-bottom: width(24px);
+			font-weight: 300;
+			}
+			li{
+				line-height: width(27px);
+				a{
+					display: inline-block;
+					&:after{
+						margin-top: width(-5px);
+						display: block;
+						width: 0;
+						content: "";
+						height: width(.3px)!important;
+						background: black;
+						transition: .3s;
+					}
+					&:hover:after{
+						animation: borbot .2s ease;
+						width: 100%;
+					}	
+				}
+			}
+		}
+		.banner{
+			height: width(398px);
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+				h2{
+			margin-top: width(10px);
+			font-weight: 300;
+			text-transform: uppercase;
+			font-size: width(12px);
+			letter-spacing: width(1.6px);
+			text-align: center;
+		}
+			div{
+				cursor: pointer;
+			}
+		}
+	}
+	.new{
+		.banner{
+		width: width(672px);
+		div{
+			width: width(336px);
+			padding: 0 width(25px);
+		}
+		img{
+			width: width(280px);
+			height: width(160px);
+		}
+	
+	}
+	}
+	.brand{
+		.row_2, .row_3, .row_4{
+			margin-top: width(37.6px);
+		}
+		.banner{
+			margin-left: width(-10px);
+			width: width(288px);
+			div{
+				width: width(288px);
+			}
+			img{
+				width: width(264px);
+				height: width(160px);
+			}	
+		}
+	}
+	.man{
+		.banner{
+			width: width(672px);
+			div{
+				width: width(224px);
+			}
+			img{
+				width: width(200px);
+				height: width(369px);
+			}
+		}
+	}
+	.woman{
+		.banner{
+			width: width(672px);
+			div{
+				width: width(336px);
+			}
+			img{
+				width: width(312px);
+				height: width(369px);
+			}
+		}
+	}
+	.acces{
+		.banner{
+			width: width(672px);
+			div{
+				width: width(336px);
+				height: width(199px);
+			}
+			img{
+				width: width(312px);
+				height: width(160px);
+			}
+		}
+	}
+	.sale{
+		.banner{
+			width: width(672px);
+			div{
+				width: width(224px);
+				height: width(398px);
+			}
+			img{
+				width: width(200px);
+				height: width(369px);
+			}
+		}
+	}
+}
+
+
+@keyframes borbot{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
