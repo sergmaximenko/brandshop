@@ -1,0 +1,130 @@
+footer{
+	a.bot{
+		margin-bottom: width(24px);
+	}
+	h1.bot{
+		margin-bottom: width(7px);
+	}
+	div.bot{
+		width: width(96px);
+		height: width(185px);
+	}
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding: width(32px) width(195.6px) width(72px);
+	border-top: width(2px) solid #f2f2f2;
+	div{
+		width: width(288px);
+		height: width(185px);
+		display: flex;
+		flex-flow: column nowrap;
+		div{
+			margin-top: width(24px);
+			display: flex;
+			flex-flow: row nowrap;
+			img{
+				width: width(24px);
+				height: width(24px);
+				margin-right: width(24px);
+				cursor: pointer;
+			}
+		}
+		h1{
+			font-size: width(14px);
+			font-weight: 300;
+			line-height: width(20px);
+			margin-bottom: width(10px);
+		}
+		a, h2{
+			align-self: flex-start;
+			color: rgba(0,0,0,.4);
+			line-height: width(20px);
+			font-weight: 300;
+			margin-bottom: width(7px);
+			border-bottom: width(1px) solid transparent;
+		}
+		a{
+			cursor: pointer;
+		}
+		a:hover{
+			border-bottom: width(1px) solid rgba(0,0,0,.4);
+		}
+		input{
+			cursor: pointer;
+			width: width(264px);
+			height: width(41px);
+			border: 0;
+			border-bottom: width(1px) solid rgba(0,0,0,.4);
+			padding-right: width(50px);
+			padding-bottom: width(7px);
+			&:active, &:hover, &:focus{
+				outline: 0;
+				outline-offset: 0;
+			}
+		}
+		input::placeholder{
+			color: rgba(0,0,0,.4);
+		}
+	}
+	div:last-child{
+		width: width(168px);
+	}
+}
+
+
+.footer{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding: width(15px) width(195.5px) width(10px);
+	background-color: black;
+	div{
+		display: flex;
+		flex-flow: row nowrap;	
+	}
+	h1{
+		color: #666;
+		font-size: width(12px);
+		font-weight: 300;
+	}
+	a{
+		cursor: pointer;
+		color: #666;
+		border-bottom: width(2px) solid #666;
+		font-size: width(12px);
+		&:hover{
+			border: 0;
+		}
+	}
+	img{
+		width: width(27px);
+		height: width(16px);
+	}
+	img:nth-child(5){
+		width: width(47px);
+		height: width(16px);
+		margin-left: width(24px);
+	}
+	img:nth-child(10){
+		width: width(33px);
+		height: width(16px);
+	}
+	img:nth-child(11){
+		width: width(51px);
+		height: width(14px);
+	}
+	img:nth-child(12){
+		width: width(51px);
+		height: width(14px);
+	}
+	img:nth-child(13){
+		width: width(85px);
+		height: width(14px);
+	}
+	div.bot{
+		width: width(0.5px);
+		height: width(16px);
+		background-color: #666;
+	}
+}
