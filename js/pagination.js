@@ -1,5 +1,7 @@
 let notesOnPage = 9;
 let sort = 'normal';
+let DataOpen = adidas;
+let none = 0;
 
 function pagi(){
 let pagination = document.querySelector('.pagination');
@@ -7,7 +9,8 @@ let content = document.querySelector('.content');
 pagination.innerHTML = '';
 
 
-let countOfItems = Math.ceil(adidas.length / notesOnPage);
+
+let countOfItems = Math.ceil(DataOpen.length / notesOnPage);
 
 for(let i=1; i<=countOfItems; i++){
 	let li = document.createElement('li');
@@ -17,12 +20,15 @@ for(let i=1; i<=countOfItems; i++){
 
 let tabs = document.querySelectorAll('.pagination li');
 showPage(tabs[0]);
-
+if(tabs.length == 1){
+	tabs[0].classList.add('opacity0')
+}
 for(let i =0; i<tabs.length; i++){
 	tabs[i].onclick=function(){
 		showPage(tabs[i]);
 	}
 }
+
 
 if(countOfItems > 5){
 	let left = document.createElement('i');
@@ -52,12 +58,14 @@ if(countOfItems > 5){
 
 
 	function showPage(item){
-		let active = document.querySelector('.pagination li.active');
+		if(item){
+			let active = document.querySelector('.pagination li.active');
 		if(active){
 			active.classList.remove('active');
 		}
 		item.classList.add('active');
 		let pageNum = +item.innerHTML;
+			
 		
 		if(countOfItems > 5){
 			let fa = document.querySelectorAll('.faPag');
@@ -117,19 +125,23 @@ if(countOfItems > 5){
 		let end = start + notesOnPage;
 		let massive;
 		if(sort == 'normal'){
-			massive = adidas.slice().reverse().slice(start, end);
+			massive = DataOpen.slice().reverse().slice(start, end);
 		} else if(sort == '+'){
-			massive = adidas.slice().sort(min).slice(start, end);
+			massive = DataOpen.slice().sort(min).slice(start, end);
 		} else if(sort == '-'){
-			massive = adidas.slice().sort(min).reverse().slice(start, end);
+			massive = DataOpen.slice().sort(min).reverse().slice(start, end);
 		} else if(sort == 'new'){
-			massive = adidas.slice().reverse().slice(start, end);
+			massive = DataOpen.slice().reverse().slice(start, end);
 		} else if(sort == 'old'){
-			massive = adidas.slice(start, end);
+			massive = DataOpen.slice(start, end);
 		}
 		let notes = massive;
 		content.innerHTML = '';
-		for(let i=0; i<notes.length; i++){
+			if( none == 1){
+				none = 0;
+				return
+			} else{
+			for(let i=0; i<notes.length; i++){
 			let item = document.createElement('div');
 			item.className = 'item';
 			content.appendChild(item);
@@ -159,9 +171,16 @@ if(countOfItems > 5){
 			let h3 = document.createElement('h3');
 			h3.textContent = notes[i].price;
 			item.appendChild(h3);
+		}	
 		}
+
  	
-	}	
+	} else{
+		DataOpen = [''];
+		none = 1;
+		pagi();
+	}
+		}
 }
 pagi();
 
