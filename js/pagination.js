@@ -4,6 +4,7 @@ let DataOpen = adidas;
 let none = 0;
 
 function pagi(){
+	
 let pagination = document.querySelector('.pagination');
 let content = document.querySelector('.content');
 pagination.innerHTML = '';
@@ -65,7 +66,6 @@ if(countOfItems > 5){
 		}
 		item.classList.add('active');
 		let pageNum = +item.innerHTML;
-			
 		
 		if(countOfItems > 5){
 			let fa = document.querySelectorAll('.faPag');
@@ -136,6 +136,7 @@ if(countOfItems > 5){
 			massive = DataOpen.slice(start, end);
 		}
 		let notes = massive;
+		curItems = notes.length;
 		content.innerHTML = '';
 			if( none == 1){
 				none = 0;
@@ -144,8 +145,14 @@ if(countOfItems > 5){
 			for(let i=0; i<notes.length; i++){
 			let item = document.createElement('div');
 			item.className = 'item';
+			notes[i][`${notes[i].id}`] = 0;
 			content.appendChild(item);
-			
+			item.onclick = function(){
+				notes[i][`${notes[i].id}`] = Number(notes[i][`${notes[i].id}`]) + 1;
+				itemsBasket.push(notes[i])
+				itemsBasket = Array.from(new Set(itemsBasket));
+				render(itemsBasket);
+			}
 			let shadow = document.createElement('div');
 			shadow.className = 'shadow';
 			item.appendChild(shadow);

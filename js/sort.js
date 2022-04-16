@@ -4,9 +4,11 @@ let h2One = document.querySelectorAll('.sortOne div h2');
 let h2Two = document.querySelectorAll('.sortTwo div h2');
 let spanSortOne = document.querySelectorAll('.sortOne div h1 span');
 let spanSortTwo = document.querySelectorAll('.sortOne div h2 span');
-let body = document.querySelector('body');
 
-body.onclick = function(event){
+
+body.addEventListener('click', hideSort);
+
+function hideSort(event){
 	if(event.target.parentNode.className !== 'col' &&
 	  event.target.parentNode.className !== 'sortOne'){
 		butSortOne[1].classList.remove('show');
@@ -35,7 +37,11 @@ for(let i=0; i<h2One.length; i++){
 		butSortOne[1].classList.toggle('show');
 		spanSortOne[0].textContent = h2One[i].span;
 		notesOnPage = +h2One[i].span
-		pagi();
+		if(curItems == 1){
+			return
+		} else{
+			pagi();	
+		}
 	}
 }
 
@@ -46,6 +52,11 @@ for(let i=0; i<h2Two.length; i++){
 		}
 		h2Two[i].classList.add('active');
 		butSortTwo[1].classList.toggle('show');
+		if(item){
+			none = 0
+		} else{
+			none = 1;	
+		}
 		if(i == 0){
 			sort = 'normal';
 			pagi();
@@ -66,7 +77,6 @@ for(let i=0; i<h2Two.length; i++){
 	}
 }
 
-//По убыванию
 
 function toNumber(a){
 	let price = a.price.split(' ');

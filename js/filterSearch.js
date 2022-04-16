@@ -125,7 +125,6 @@ filter.onclick = function(){
 			}
 		}
 	}	
-		console.log(obj,"a"+a, "b"+b, words.length, words )
 		if(indexSize == 0){
 			if(a > words.length){
 				mas2.push(obj);
@@ -236,8 +235,4 @@ filter.onclick = function(){
 		DataOpen = mas4;
 		pagi();
 	}
-	/*console.log(mas1)
-	console.log(mas2)
-	/*console.log(mas3)
-	console.log(mas4)*/
 }

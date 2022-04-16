@@ -3,7 +3,7 @@ let ulFilter = document.querySelectorAll('.fil ul');
 let pFilter = document.querySelectorAll('.fil p');
 let filter = document.querySelector('.filter');
 let filterShadow = document.querySelector('.filShadow');
-
+let curItems;
 
 for(let i=0; i<tubsFilter.length; i++){
 	 let cur = 0;
@@ -34,8 +34,22 @@ window.addEventListener('scroll', function() {
 	}else if(notesOnPage == 27){
 		i =1.3;
 	}
-	if(pageYOffset > 150 &&
-	   filter.clientHeight<=295){
+	if(curItems <= 6 && pageYOffset < 150){
+	   	filter.classList.remove('fixed');
+		filter.style.top = "";
+		filterShadow.classList.add('display0');
+	   } else if(curItems <= 6 && pageYOffset > 150 &&
+	   			filter.clientHeight<=295){
+		filter.classList.add('fixed');
+		filter.style.top = "20px";
+		filter.style.bottom = "auto";
+		filterShadow.classList.remove('display0');
+	} else if(curItems <= 6 && filter.clientHeight>295){
+		filter.classList.add('fixed');
+		filter.style.top = "auto";
+		filter.style.bottom = "440px";
+		filterShadow.classList.remove('display0');
+			  } else if(pageYOffset > 150 && filter.clientHeight<=295){
 		filter.classList.add('fixed');
 		filter.style.top = "20px";
 		filter.style.bottom = "auto";
@@ -46,8 +60,7 @@ window.addEventListener('scroll', function() {
 		filter.style.top = "20px";
 		filter.style.bottom = "auto";
 		filterShadow.classList.remove('display0');
-	}else if(pageYOffset > 150 && filter.clientHeight>295 &&
-			pageYOffset*i>scrollHeight){
+	}else if(filter.clientHeight>295 && pageYOffset*i>scrollHeight){
 		filter.classList.add('fixed');
 		filter.style.top = "auto";
 		filter.style.bottom = "440px";
