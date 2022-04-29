@@ -1,9 +1,10 @@
 let notesOnPage = 9;
 let sort = 'normal';
-let DataOpen = adidas;
+let DataOpen = JSON.parse(sessionStorage.getItem("brand"));
 let none = 0;
-
+let tabs;
 function pagi(){
+
 	
 let pagination = document.querySelector('.pagination');
 let content = document.querySelector('.content');
@@ -19,7 +20,7 @@ for(let i=1; i<=countOfItems; i++){
 	pagination.appendChild(li);
 }
 
-let tabs = document.querySelectorAll('.pagination li');
+tabs = document.querySelectorAll('.pagination li');
 showPage(tabs[0]);
 if(tabs.length == 1){
 	tabs[0].classList.add('opacity0')
@@ -81,8 +82,7 @@ if(countOfItems > 5){
 			}
 		}
 		
-		
-		if(pageNum>=5){
+		if(countOfItems>=5){
 			
 		for(let i =0; i<tabs.length; i++){
 			tabs[i].classList.add('display0');
@@ -145,18 +145,18 @@ if(countOfItems > 5){
 			for(let i=0; i<notes.length; i++){
 			let item = document.createElement('div');
 			item.className = 'item';
-			notes[i][`${notes[i].id}`] = 0;
 			content.appendChild(item);
-			item.onclick = function(){
-				notes[i][`${notes[i].id}`] = Number(notes[i][`${notes[i].id}`]) + 1;
-				itemsBasket.push(notes[i])
-				itemsBasket = Array.from(new Set(itemsBasket));
-				render(itemsBasket);
-			}
 			let shadow = document.createElement('div');
 			shadow.className = 'shadow';
 			item.appendChild(shadow);
-			
+				let qwe;
+			shadow.onmouseover = function(){
+				setTimeout(function(){qwe = setInterval(function(){item.style.zIndex = 102;}, 1)}, 1)
+			}
+			shadow.onmouseout = function(){
+				clearInterval(qwe)
+				setTimeout(function(){item.style.zIndex = 99;}, 100)
+			}
 			let img = document.createElement('img');
 			img.src = notes[i].img;
 			item.appendChild(img);
@@ -176,12 +176,65 @@ if(countOfItems > 5){
 			p.appendChild(model);
 			
 			let h3 = document.createElement('h3');
-			h3.textContent = notes[i].price;
+			h3.textContent = Number(notes[i].price).toLocaleString()+" ₽";
 			item.appendChild(h3);
+			let marTop = h3.offsetTop;
+				
+			let sizeWrap = document.createElement('div');
+			sizeWrap.className = 'size_wrap';
+			sizeWrap.style.marginTop = 	marTop + 30 + 'px';
+			let size = document.createElement('div');
+			size.className = 'size';
+				
+			for(let a =0; a<notes[i].size.length; a++){
+				let div = document.createElement('div');
+				div.textContent = notes[i].size[a];
+				size.appendChild(div);
+				
+				div.onclick = function(){
+				let key = {};
+				let newObj = {};
+				for(let key in notes[i]){
+					newObj[key] = notes[i][key];
+				}
+				newObj.size = div.textContent
+					let indx = 0;
+					if(itemsBasket.length > 0){
+						for(let b=0; b<itemsBasket.length; b++){
+							if(JSON.stringify(itemsBasket[b]) == JSON.stringify(newObj)){
+								itemsBasket.splice(b,1,newObj);	
+								for(let a = 0; a<keys.length; a++){
+									if(keys[a].id == newObj.id && keys[a].size == newObj.size){
+										keys[a].col = keys[a].col + 1
+									}
+								}
+							} else{
+								indx++
+							}	
+						}
+						if(indx == itemsBasket.length){
+							key.id = newObj.id;
+							key.size = newObj.size;
+							key.col = 1;
+							keys.push(key)
+							itemsBasket.push(newObj);
+						}
+					} else{
+						key.id = newObj.id;
+						key.size = newObj.size;
+						key.col = 1;
+						keys.push(key)
+						itemsBasket.push(newObj);
+					}
+					render(itemsBasket, keys);
+			}
+				
+					
+			}
+			shadow.appendChild(sizeWrap);
+			sizeWrap.appendChild(size);
 		}	
 		}
-
- 	
 	} else{
 		DataOpen = [''];
 		none = 1;

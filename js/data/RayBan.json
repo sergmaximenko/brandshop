@@ -1,0 +1,4 @@
+[
+	{"id": "221", "brand": "Ray-Ban", "img": "../img/data/Ray-Ban/зол1.jpg", "type": "Солнцезащитные очки", "model": "Jack", "price": "12890", "sex": "Унисекс", "category": "Солнцезащитные очки", "color": "Золотой", "size": ["ONE SIZE"], "photo": ["../img/data/Ray-Ban/зол2.jpg","../img/data/Ray-Ban/зол3.jpg","../img/data/Ray-Ban/зол4.jpg"], "info":["Страна-производитель: Италия","Металлическая оправа","Линзы с защитой от UV-излучения","Лаконичный брендинг"]},
+	{"id": "222", "brand": "Ray-Ban", "img": "../img/data/Ray-Ban/роз1.jpg", "type": "Солнцезащитные очки", "model": "Round Flat Lenses", "price": "3890", "sex": "Унисекс", "category": "Солнцезащитные очки", "color": "Розовый", "size": ["ONE SIZE"], "photo": ["../img/data/Ray-Ban/роз2.jpg","../img/data/Ray-Ban/роз3.jpg","../img/data/Ray-Ban/роз4.jpg"], "info":["Страна-производитель: Италия"]}
+]

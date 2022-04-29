@@ -27,7 +27,7 @@
 			font-weight: 400;
 			line-height: width(28px);
 		}
-		a{
+		a:not(:first-child){
 			text-transform: uppercase;
 			margin-left: width(10px);
 			border-bottom: width(1px) solid black;

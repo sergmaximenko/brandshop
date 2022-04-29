@@ -36,7 +36,7 @@
 			font-size: width(14px);
 			line-height: width(22px);
 		}
-		a{
+		a:not(:first-child){
 			top: width(365px);
 			position: absolute;
 			display: inline;

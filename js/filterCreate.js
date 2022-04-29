@@ -12,16 +12,16 @@ let category = [];
 let color = [];
 let size = [];
 
-for(let i=0; i<adidas.length; i++){
-	for(let key in adidas[i]){
+for(let i=0; i<DataOpen.length; i++){
+	for(let key in DataOpen[i]){
 		if(key == "sex"){
-			sex.push(adidas[i].sex)
+			sex.push(DataOpen[i].sex)
 		} else if(key == "category"){
-			category.push(adidas[i].category)	
+			category.push(DataOpen[i].category)	
 		} else if(key == "color"){
-			color.push(adidas[i].color)	
+			color.push(DataOpen[i].color)	
 		} else if(key == "size"){
-			let a = adidas[i].size;
+			let a = DataOpen[i].size;
 			for(let i=0; i<a.length; i++){
 				size.push(a[i]);
 			}
@@ -37,6 +37,7 @@ size = Array.from(new Set(size));
 let sizeUS = [];
 let sizeEU = [];
 let sizeStr = [];
+let sizeNum = [];
 
 function sortSize(a){
 	let x = a.slice('');
@@ -46,6 +47,8 @@ function sortSize(a){
 		sizeEU.push(a)
 	} else if(x[x.length-2]+x[x.length-1] == "US"){
 		sizeUS.push(a)
+	} else if (typeof Number(x) == 'number'){
+		sizeNum.push(a)
 	}
 }
 size.map(sortSize);
@@ -92,11 +95,15 @@ sizeStr.sort(function(a, b){
 		return 1
 	}   
 })
+sizeNum.sort(function(a, b){
+	return a - b
+});
 
-size = [].concat(sizeUS, sizeEU, sizeStr)
+size = [].concat(sizeUS, sizeEU, sizeNum, sizeStr)
 sizeUS = "";
 sizeEU = "";
 sizeStr = "";
+sizeNum = "";
 let id = 1;
 for(let i=0; i<sex.length; i++){
 	let li = document.createElement('li');

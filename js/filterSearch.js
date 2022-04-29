@@ -67,7 +67,8 @@ filter.onclick = function(){
 	}
 	sum = a+b+c+d;
 	mas1 = [];
-	adidas.map(function(obj){
+	DataOpen = JSON.parse(sessionStorage.getItem("brand"));
+	DataOpen.map(function(obj){
 	let a = words.length;
 	let b = 0;
 	for(let i=0; i<words.length; i++){
@@ -220,7 +221,7 @@ filter.onclick = function(){
 		}
 	})	
 	if(sum == 0){
-		DataOpen = adidas;
+		DataOpen = JSON.parse(sessionStorage.getItem("brand"));
 		pagi();
 	} else if(sum == 1){
 		DataOpen = mas1;

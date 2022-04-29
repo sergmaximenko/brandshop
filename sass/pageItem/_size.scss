@@ -1,0 +1,56 @@
+		.optionSize{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		border-bottom: width(1px) solid rgba(0,0,0,.1);
+		padding-bottom: width(20px);
+			h1{
+				text-align: center;
+				font-size: width(24px);
+				font-weight: 300;
+				cursor: pointer;
+			}
+			h2{
+				text-align: center;
+				font-weight: 100;
+				color: rgba(0,0,0,.4);
+				line-height: width(20px);
+				margin-top: width(10px);
+
+			}
+			h3{
+				text-align: center;
+				font-weight: 100;
+				line-height: width(45px);
+				margin-bottom: width(16px);
+				margin-top: width(10px);
+			}
+			.size{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				margin-top: width(-12px);
+				div{
+					cursor: pointer;
+					width: width(68px);
+					height: width(32px);
+					padding: 0 width(8px);
+					background-color: rgba(0,0,0,.05);
+					margin-bottom: width(5px);
+					text-align: center;
+					line-height: width(32px);
+					transition: all .2s;
+					font-size: width(13px);
+					&:hover:not(.sizeActive){
+					background-color: rgba(0,0,0,.1);	
+					}
+				}
+				.sizeActive{
+					background-color: black;
+					color: #fff;
+					&:hover{
+						background-color: rgba(0,0,0,.8);	
+					}
+				}
+			}
+		}

@@ -1,0 +1,4 @@
+[
+	{"id": "208", "brand": "Peaceful Hooligan", "img": "../img/data/PeacefulHooligan/п1.jpg", "type": "Перчатки", "model": "Leather", "price": "7890", "sex": "Унисекс", "category": "Перчатки", "color": "Чёрный", "size": ["L"], "photo": ["../img/data/PeacefulHooligan/п2.jpg","../img/data/PeacefulHooligan/п3.jpg","../img/data/PeacefulHooligan/п4.jpg"], "info":["Материал: 100% кожа","Страна-производитель: Китай","Регулируемый ремешок","Эластичные манжеты","Лаконичный брендинг"]},
+	{"id": "209", "brand": "Peaceful Hooligan", "img": "../img/data/PeacefulHooligan/дж1.jpg", "type": "Мужские джинсы", "model": "Regular Fit Premium 12 Oz Denim", "price": "12890", "sex": "Мужской", "category": "Джинсы", "color": "Чёрный", "size": ["34"], "photo": ["../img/data/PeacefulHooligan/дж2.jpg","../img/data/PeacefulHooligan/дж3.jpg","../img/data/PeacefulHooligan/дж4.jpg"], "info":["Материал: 98% хлопок, 2% эластан","Страна-производитель: Турция"]}
+]

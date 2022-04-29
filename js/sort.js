@@ -47,12 +47,16 @@ for(let i=0; i<h2One.length; i++){
 
 for(let i=0; i<h2Two.length; i++){
 	h2Two[i].onclick = function(){
+		if(DataOpen.length <= 1){
+			return false
+		}
 		for(let i=0; i<h2Two.length; i++){
 		h2Two[i].classList.remove('active');
 		}
 		h2Two[i].classList.add('active');
 		butSortTwo[1].classList.toggle('show');
-		if(item){
+	
+		if(tabs){
 			none = 0
 		} else{
 			none = 1;	
@@ -79,9 +83,7 @@ for(let i=0; i<h2Two.length; i++){
 
 
 function toNumber(a){
-	let price = a.price.split(' ');
-	price.pop();
-	price = +price.join('');
+	let price = +a.price;
 	return price;
 }
 

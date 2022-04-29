@@ -3,7 +3,7 @@ let cont = document.querySelector('.basket .cont');
 let basket = document.querySelector('.basket');
 let headerIcon = document.querySelectorAll('.icon img');
 let itemsBasket = [];
-
+let keys = [];
 
 headerIcon[1].onclick = function(){
 	basket.classList.toggle('display0');
@@ -47,7 +47,12 @@ function render(itemsBasket){
 
 		for(let i=0; i<itemsBasket.length; i++){
 		let a = i;
-		let numId = itemsBasket[i].id;
+		let numId;
+		for(let a =0; a<keys.length; a++){
+			if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size){
+				numId = keys[a].col;
+			}
+		}
 		let item = document.createElement('div');
 		item.classList.add('itemBasket');
 		cont.appendChild(item);
@@ -71,7 +76,7 @@ function render(itemsBasket){
 		let cur = document.createElement('p');
 		info.appendChild(cur);
 		let num = document.createElement('span');
-		num.textContent = itemsBasket[i][numId];
+		num.textContent = numId;
 		cur.appendChild(num);
 		let plus = document.createElement('span');
 		plus.textContent = ' +';
@@ -79,12 +84,33 @@ function render(itemsBasket){
 			let sumBasket = document.querySelector('.butBasket div span');
 			let priceBasket =parseInt(sumBasket.textContent.replace(",",".").replace(/[^0-9.]/gim, ""));
 			num.textContent = Number(num.textContent) + 1;
-			itemsBasket[i][numId] = num.textContent;
-			p.textContent = (parseInt(p.textContent.replace(",",".").replace(/[^0-9.]/gim, "")) + parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+"₽";
+			for(let a =0; a<keys.length; a++){
+			if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size){
+				keys[a].col = Number(num.textContent);
+			}
+			}
+			p.textContent = (parseInt(p.textContent.replace(",",".").replace(/[^0-9.]/gim, "")) + parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+" ₽";
 			let ex = document.createElement('span');
 			ex.textContent = '+';
 			p.appendChild(ex);
-			sumBasket.textContent = (priceBasket + parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+"₽";
+					ex.onclick=function(){
+						this.parentNode.parentNode.parentNode.parentNode.removeChild(item)
+		
+						for(let a =0; a<keys.length; a++){
+							if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size){
+								keys[a].col = 0
+							}
+							if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size && keys[a].col <= 0){
+								itemsBasket.splice(i, 1);
+								keys.splice(a,1);
+								render(itemsBasket, keys)
+							}
+						}	
+						if(itemsBasket.length == 0){
+						render([])
+						}
+					}
+			sumBasket.textContent = (priceBasket + parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+" ₽";
 		}
 		let min = document.createElement('span');
 		min.textContent = '– ';
@@ -92,21 +118,44 @@ function render(itemsBasket){
 			let sumBasket = document.querySelector('.butBasket div span');
 			let priceBasket =parseInt(sumBasket.textContent.replace(",",".").replace(/[^0-9.]/gim, ""));
 			num.textContent = Number(num.textContent) - 1;
-			itemsBasket[i][numId] = Number(num.textContent);
-			p.textContent = (parseInt(p.textContent.replace(",",".").replace(/[^0-9.]/gim, "")) - parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+"₽";
-			sumBasket.textContent = (priceBasket - parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+"₽";
+			for(let a =0; a<keys.length; a++){
+			if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size){
+				keys[a].col = Number(num.textContent);
+			if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size && keys[a].col <= 0){
+				this.parentNode.parentNode.parentNode.parentNode.removeChild(item);
+				itemsBasket.splice(i, 1);
+				keys.splice(a, 1);
+				render(itemsBasket, keys)
+			}
+			}
+			}
+			if(itemsBasket.length > 0){
+			p.textContent = (parseInt(p.textContent.replace(",",".").replace(/[^0-9.]/gim, "")) - parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+" ₽";
+			sumBasket.textContent = (priceBasket - parseInt(itemsBasket[i].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+" ₽";
 			let ex = document.createElement('span');
 			ex.textContent = '+';
 			p.appendChild(ex);
-			
-			if(itemsBasket[i][numId] <= 0){
-			this.parentNode.parentNode.parentNode.parentNode.removeChild(item);
-			itemsBasket.splice(i, 1);
+			ex.onclick=function(){
+				this.parentNode.parentNode.parentNode.parentNode.removeChild(item)
+		
+				for(let a =0; a<keys.length; a++){
+					if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size){
+						keys[a].col = 0
+					}
+					if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size && keys[a].col <= 0){
+						itemsBasket.splice(i, 1);
+						keys.splice(a,1);
+						render(itemsBasket, keys)
+					}
+				}	
+				if(itemsBasket.length == 0){
+					render([])
+				}
+			}
 			}
 			if(itemsBasket.length == 0){
 				render([])
 			}
-			render(itemsBasket)
 		}
 		cur.appendChild(min);
 		cur.appendChild(plus);
@@ -117,22 +166,29 @@ function render(itemsBasket){
 		let price = document.createElement('div');
 		item.appendChild(price);
 		let p = document.createElement('p');
-		p.textContent = itemsBasket[i].price;
+		p.textContent = Number(itemsBasket[i].price).toLocaleString()+" ₽";
 		for(let i =0; i<+num.textContent -1; i++){
-			p.textContent = (parseInt(p.textContent.replace(",",".").replace(/[^0-9.]/gim, "")) + parseInt(itemsBasket[a].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+"₽";
+			p.textContent = (parseInt(p.textContent.replace(",",".").replace(/[^0-9.]/gim, "")) + parseInt(itemsBasket[a].price.replace(",",".").replace(/[^0-9.]/gim, ""))).toLocaleString()+" ₽";
 		}
 		let ex = document.createElement('span');
 		ex.textContent = '+';
 		ex.onclick=function(){
 		this.parentNode.parentNode.parentNode.parentNode.removeChild(item)
-		itemsBasket[i][numId] = 0;
-			if(itemsBasket[i][numId] <= 0){
-				itemsBasket.splice(i, 1);
+		
+		for(let a =0; a<keys.length; a++){
+			if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size){
+				keys[a].col = 0
 			}
+			if(itemsBasket[i].id == keys[a].id && itemsBasket[i].size == keys[a].size && keys[a].col <= 0){
+				itemsBasket.splice(i, 1);
+				keys.splice(a,1);
+				render(itemsBasket, keys)
+			}
+			}	
 			if(itemsBasket.length == 0){
 				render([])
 			}
-			render(itemsBasket)
+			console.log(itemsBasket, keys)
 		}
 		p.appendChild(ex);
 		price.appendChild(p);
@@ -150,7 +206,7 @@ function render(itemsBasket){
 		let col = document.createElement('div');
 		col.textContent = 'Общая стоимость:';
 		let price = document.createElement('span');
-		price.textContent = summa.toLocaleString() + "₽";
+		price.textContent = summa.toLocaleString() + " ₽";
 		col.appendChild(price);
 		butBasket.appendChild(col);	
 		}
@@ -170,6 +226,10 @@ function reRender(){
 	for(let i=0; i<basketNul.length; i++){
 		basketNul[i].parentNode.removeChild(basketNul[i])
 	}	
+}
+
+function exe (){
+	
 }
 
 

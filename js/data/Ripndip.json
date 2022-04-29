@@ -1,0 +1,4 @@
+[
+	{"id": "225", "brand": "Ripndip", "img": "../img/data/Ripndip/шо1.jpg", "type": "Мужские шорты", "model": "Super Sanerm Sweat", "price": "1190", "sex": "Мужской", "category": "Шорты", "color": "Синий", "size": ["S"], "photo": ["../img/data/Ripndip/шо2.jpg","../img/data/Ripndip/шо3.jpg","../img/data/Ripndip/шо4.jpg","../img/data/Ripndip/шо5.jpg"], "info":["Материал: 100% хлопок","Страна-производитель: Китай","Технология окрашивания Tie-Dyeing","Классический крой","Регулируемый пояс","2 боковых кармана","2 задних кармана","Контрастный брендинг","На модели размер шортов - M","Рост модели - 186 см"]},
+	{"id": "226", "brand": "Ripndip", "img": "../img/data/Ripndip/но1.jpg", "type": "Носки", "model": "We Out Here", "price": "1888", "sex": "Унисекс", "category": "Носки", "color": "Синий", "size": ["38-40EU"], "photo": ["../img/data/Ripndip/но2.jpg"], "info":["Материал: 70% хлопок, 27% полиэстер, 3% спандекс","Страна-производитель: Южная Корея"]}
+]

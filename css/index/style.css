@@ -21,7 +21,10 @@
   margin-bottom: 7.2416063199vw; }
 
 .opacity0 {
-  opacity: 0; }
+  opacity: 0 !important; }
+
+.opacity1 {
+  opacity: 1 !important; }
 
 header {
   z-index: 1000;
@@ -68,7 +71,7 @@ header {
   position: fixed;
   top: 4.6082949309vw;
   width: 100%;
-  z-index: 100; }
+  z-index: 104; }
   .menu .open_menu {
     background: #fff;
     position: absolute;
@@ -307,7 +310,7 @@ header {
       color: rgba(0, 0, 0, 0.4);
       font-size: 0.9216589862vw;
       line-height: 1.448321264vw; }
-    .news div a {
+    .news div a:not(:first-child) {
       top: 24.0289664253vw;
       position: absolute;
       display: inline;
@@ -316,7 +319,7 @@ header {
       letter-spacing: 0.1053324556vw;
       border-bottom: 0.0658327847vw solid black;
       padding-bottom: 0.1974983542vw; }
-      .news div a:hover {
+      .news div a:not(:first-child):hover {
         color: rgba(0, 0, 0, 0.3);
         border-bottom: 0.0658327847vw solid rgba(0, 0, 0, 0.3); }
 
@@ -344,14 +347,14 @@ header {
     margin: 0.5266622778vw 0.6583278473vw;
     font-weight: 400;
     line-height: 1.8433179724vw; }
-  .section div a {
+  .section div a:not(:first-child) {
     text-transform: uppercase;
     margin-left: 0.6583278473vw;
     border-bottom: 0.0658327847vw solid black;
     padding-bottom: 0.1974983542vw;
     letter-spacing: 0.1053324556vw;
     font-size: 0.7899934167vw; }
-    .section div a:hover {
+    .section div a:not(:first-child):hover {
       color: rgba(0, 0, 0, 0.3);
       border-bottom: 0.0658327847vw solid rgba(0, 0, 0, 0.3); }
 
@@ -396,7 +399,7 @@ footer {
       border-bottom: 0.0658327847vw solid transparent; }
     footer div a {
       cursor: pointer; }
-    footer div a:hover {
+    footer div a:hover:not(.icon) {
       border-bottom: 0.0658327847vw solid rgba(0, 0, 0, 0.4); }
     footer div input {
       cursor: pointer;
@@ -459,8 +462,8 @@ footer {
     background-color: #666; }
 
 .basket {
-  z-index: 100;
-  position: absolute;
+  z-index: 103;
+  position: fixed;
   top: 4.6082949309vw;
   right: 15.2073732719vw;
   max-height: 37.3271889401vw;

@@ -1,0 +1,38 @@
+	.imgTub{
+		z-index: 100;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		div{
+		position: relative;
+		img{
+			width: width(48px);
+			height: width(48px);
+			margin-bottom: width(20px);
+			cursor: pointer;
+		}	
+		}
+		.activeImg{
+			.shadow{
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,.05);
+				width: width(48px);
+				height: width(48px);
+				transition: all .5s;
+			}
+		}
+
+
+	}
+	.imgWin{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		padding: 0 width(24px);
+		img{
+			width: width(663px);
+			height: width(663px);
+		}
+	}
