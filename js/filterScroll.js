@@ -19,7 +19,7 @@ for(let i=0; i<tubsFilter.length; i++){
 		
 	}
 }
-
+/*
 window.addEventListener('scroll', function() {
 	var scrollHeight = Math.max(
   		document.body.scrollHeight, document.documentElement.scrollHeight,
@@ -71,3 +71,4 @@ window.addEventListener('scroll', function() {
 		filterShadow.classList.add('display0');
 	}
 });
+*/

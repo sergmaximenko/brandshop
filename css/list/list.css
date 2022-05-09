@@ -360,6 +360,8 @@ header {
       color: black; }
 
 .filter {
+  position: sticky;
+  top: 70px;
   margin-top: 3.2916392363vw;
   width: 18.0381830151vw;
   background-color: #fff;
