@@ -1,4 +1,6 @@
 	.imgTub{
+		top: 80px;
+		position: sticky;
 		z-index: 100;
 		display: flex;
 		flex-flow: column nowrap;
@@ -8,10 +10,12 @@
 		img{
 			width: width(48px);
 			height: width(48px);
-			margin-bottom: width(20px);
 			cursor: pointer;
-		}	
 		}
+		}
+		div:not(:last-child){
+				margin-bottom: width(20px);
+			}
 		.activeImg{
 			.shadow{
 				position: absolute;

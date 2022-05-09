@@ -199,6 +199,8 @@ header {
   align-items: flex-start;
   margin-top: 1.9749835418vw; }
   .contItem .option {
+    top: 70px;
+    position: sticky;
     width: 23.1073074391vw;
     padding: 2.1066491113vw;
     background-color: #fff;
@@ -227,6 +229,8 @@ header {
     z-index: -1; }
 
 .imgTub {
+  top: 80px;
+  position: sticky;
   z-index: 100;
   display: flex;
   flex-flow: column nowrap;
@@ -236,8 +240,9 @@ header {
     .imgTub div img {
       width: 3.1599736669vw;
       height: 3.1599736669vw;
-      margin-bottom: 1.3166556945vw;
       cursor: pointer; }
+  .imgTub div:not(:last-child) {
+    margin-bottom: 1.3166556945vw; }
   .imgTub .activeImg .shadow {
     position: absolute;
     top: 0;

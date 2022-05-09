@@ -7,9 +7,10 @@
   height: max-content;
   position: relative;
   cursor: zoom-in;
+}
+.image-zoom:not(:last-child){
 	margin-bottom: 1.316655694535879vw;
 }
-
 .image-zoom img {
   display: block;
   width: 43.64713627386438vw;
