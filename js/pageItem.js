@@ -6,7 +6,7 @@ let addBasket = document.querySelector(".addBasket h2");
 let tubItem = document.querySelectorAll(".info div");
 let ulItem = document.querySelectorAll(".info ul");
 let addBasketTwo = document.querySelector(".addBasketTwo");
-
+let addBasketOne = document.querySelector(".addBasket");
 	
 
 
@@ -33,6 +33,11 @@ for(let i=0; i<tubSize.length; i++){
 		}
 		tubSize[i].classList.add('sizeActive');
 		addBasket.textContent = tubSize[i].textContent;
+				addBasketOne.classList.remove('opacity0');
+				setTimeout(function(){addBasketOne.classList.remove('display0');}, 250);
+				addBasketTwo.classList.remove('opacity1');
+				setTimeout(function(){addBasketTwo.classList.add('display0');}, 250);
+
 	}
 }		
 	let tub = 0;
@@ -58,17 +63,37 @@ for(let i=0; i<tubSize.length; i++){
 				setTimeout(function(){tuta.classList.remove('display0');}, 250);
 				addBasketTwo.classList.remove('opacity1');
 				setTimeout(function(){addBasketTwo.classList.toggle('display0');}, 250);
-				
+				let sizeActive = document.querySelector('.sizeActive');
+				for(let i=0; i<keys.length; i++){
+				if(keys[i].size == sizeActive.textContent){
+					itemsBasket.splice(i,1);
+					keys.splice(i,1);
+					render(itemsBasket, keys);
+				}
+				}
 			} else{
 				let a = parseInt(span[1].textContent) - 1;
 				let num = document.querySelector(".num");
 				num.textContent = a;
 			}
+			let sizeActive = document.querySelector('.sizeActive');
+			for(let i=0; i<keys.length; i++){
+				if(keys[i].size == sizeActive.textContent){
+					keys[i].col = keys[i].col - 1;
+				}
+			}
+	render(itemsBasket, keys);
 		}
 		span[3].onclick = function(){
 			let a = parseInt(span[1].textContent) + 1;
 			let num = document.querySelector(".num");
 			num.textContent = a;
+			let sizeActive = document.querySelector('.sizeActive');
+			for(let i=0; i<keys.length; i++){
+				if(keys[i].size == sizeActive.textContent){
+					keys[i].col = keys[i].col + 1;
+				}
+			}
 		}
 		setTimeout(function(){tub = 0;}, 350)
 		
@@ -88,9 +113,9 @@ for(let i=0; i<tubSize.length; i++){
 				let a = 0, b = 0, c = 0;
 
 
-for(let i=1; i<tubItem.length; i++){
+for(let i=0; i<tubItem.length; i++){
 	tubItem[i].onclick = function(){
-		if(i == 1){
+		if(i == 0){
 			if(a == 0){
 				let pusk = setInterval(function(){
 					ulItem[0].style.height = a + "px";
@@ -111,7 +136,7 @@ for(let i=1; i<tubItem.length; i++){
 					clearInterval(reverse);
 					}}, 1)	
 			}
-		} else if(i == 2){
+		} else if(i == 1){
 			if(b == 0){
 				let pusk = setInterval(function(){
 					ulItem[1].style.height = b + "px";
@@ -132,7 +157,7 @@ for(let i=1; i<tubItem.length; i++){
 					clearInterval(reverse);
 					}}, 1)	
 			}
-		} else if(i == 3){
+		} else if(i == 2){
 			if(c == 0){
 				let pusk = setInterval(function(){
 					ulItem[2].style.height = c + "px";

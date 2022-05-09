@@ -145,7 +145,16 @@ if(countOfItems > 5){
 			for(let i=0; i<notes.length; i++){
 			let item = document.createElement('div');
 			item.className = 'item';
-			content.appendChild(item);
+			item.onclick = function(){sessionStorage.setItem("item", JSON.stringify(notes[i]));}
+			let a = document.createElement('a');
+			a.href = '../pageItem.html';
+			a.onclick = function(el){
+				if(el.target.parentNode.className == 'size'){
+					return false
+				}
+			}
+			a.appendChild(item);	
+			content.appendChild(a);
 			let shadow = document.createElement('div');
 			shadow.className = 'shadow';
 			item.appendChild(shadow);
@@ -186,7 +195,7 @@ if(countOfItems > 5){
 			let size = document.createElement('div');
 			size.className = 'size';
 				
-			for(let a =0; a<notes[i].size.length; a++){
+				for(let a=0; a<notes[i].size.length; a++){
 				let div = document.createElement('div');
 				div.textContent = notes[i].size[a];
 				size.appendChild(div);
@@ -230,7 +239,8 @@ if(countOfItems > 5){
 			}
 				
 					
-			}
+				
+}
 			shadow.appendChild(sizeWrap);
 			sizeWrap.appendChild(size);
 		}	

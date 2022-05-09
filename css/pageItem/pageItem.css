@@ -220,6 +220,11 @@ header {
           background-color: rgba(0, 0, 0, 0.1); }
         .contItem .option .allItem div:active {
           background-color: rgba(0, 0, 0, 0.01); }
+  .contItem .optionWrap {
+    width: 23.1073074391vw;
+    height: 6.5832784727vw;
+    margin-left: -23.1073074391vw;
+    z-index: -1; }
 
 .imgTub {
   z-index: 100;
@@ -241,6 +246,11 @@ header {
     width: 3.1599736669vw;
     height: 3.1599736669vw;
     transition: all .5s; }
+
+.imgTubWrap {
+  width: 3.1599736669vw;
+  height: 3.1599736669vw;
+  margin-left: -3.1599736669vw; }
 
 .imgWin {
   display: flex;
@@ -274,14 +284,19 @@ header {
     line-height: 2.9624753127vw;
     margin-bottom: 1.0533245556vw;
     margin-top: 0.6583278473vw; }
+  .optionSize .sizeWrap {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
   .optionSize .size {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     margin-top: -0.7899934167vw; }
     .optionSize .size div {
+      margin-right: 0.6583278473vw;
       cursor: pointer;
-      width: 4.4766293614vw;
+      width: 4.1474654378vw;
       height: 2.1066491113vw;
       padding: 0 0.5266622778vw;
       background-color: rgba(0, 0, 0, 0.05);
@@ -292,6 +307,8 @@ header {
       font-size: 0.8558262014vw; }
       .optionSize .size div:hover:not(.sizeActive) {
         background-color: rgba(0, 0, 0, 0.1); }
+    .optionSize .size div:nth-child(4n+4) {
+      margin-right: 0 !important; }
     .optionSize .size .sizeActive {
       background-color: black;
       color: #fff; }
@@ -683,8 +700,9 @@ footer {
         background-color: rgba(0, 0, 0, 0.1); }
 
 .slider {
-  margin-top: -65px;
-  padding-bottom: 130px;
+  margin-top: -4.2791310072vw;
+  padding-top: 4.6082949309vw;
+  padding-bottom: 8.5582620145vw;
   background-color: #f2f2f2;
   z-index: 10 !important; }
   .slider h1 {

@@ -26,6 +26,11 @@
 
 
 	}
+	.imgTubWrap{
+		width: width(48px);
+		height: width(48px);
+		margin-left: width(-48px);
+	}
 	.imgWin{
 		display: flex;
 		flex-flow: column nowrap;
@@ -34,5 +39,6 @@
 		img{
 			width: width(663px);
 			height: width(663px);
+			
 		}
 	}

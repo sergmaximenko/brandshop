@@ -32,4 +32,10 @@
 
 		}
 	}
+	.optionWrap{
+		width: width(351px);
+		height: width(100px);
+		margin-left: width(-351px);
+		z-index: -1;
+	}
 }

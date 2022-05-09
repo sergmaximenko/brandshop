@@ -2,8 +2,17 @@ let body = document.querySelector('body');
 let cont = document.querySelector('.basket .cont');
 let basket = document.querySelector('.basket');
 let headerIcon = document.querySelectorAll('.icon img');
-let itemsBasket = [];
-let keys = [];
+let itemsBasket;
+let keys;
+let dataItems;
+let dataKeys;
+if(!sessionStorage.getItem("dataItems")){
+	itemsBasket = [];
+	keys = [];
+} else{
+	itemsBasket = JSON.parse(sessionStorage.getItem("dataItems"));
+	keys = JSON.parse(sessionStorage.getItem("dataKeys"));
+}
 
 headerIcon[1].onclick = function(){
 	basket.classList.toggle('display0');
@@ -40,7 +49,13 @@ function render(itemsBasket){
 			basketNul.appendChild(p);
 			let div = document.createElement('div');
 			div.textContent = 'Перейти к новинкам';
-			basketNul.appendChild(div);
+			let a =document.createElement('a');
+			a.href = "listBrand.html";
+			a.onclick = function(){
+				loadItem('all');
+			}
+			a.appendChild(div);
+			basketNul.appendChild(a);
 		} else{
 		let summa = 0;
 		reRender()
@@ -211,8 +226,11 @@ function render(itemsBasket){
 		butBasket.appendChild(col);	
 		}
 		}
+	dataItems = JSON.stringify(itemsBasket);
+	dataKeys = JSON.stringify(keys);
+	sessionStorage.setItem("dataItems", dataItems);
+	sessionStorage.setItem("dataKeys", dataKeys);
 }
-
 function reRender(){
 	let items = document.querySelectorAll('.itemBasket');
 	let butBasket = document.querySelectorAll('.butBasket');
@@ -226,10 +244,6 @@ function reRender(){
 	for(let i=0; i<basketNul.length; i++){
 		basketNul[i].parentNode.removeChild(basketNul[i])
 	}	
-}
-
-function exe (){
-	
 }
 
 

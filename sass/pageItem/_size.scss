@@ -25,14 +25,20 @@
 				margin-bottom: width(16px);
 				margin-top: width(10px);
 			}
+			.sizeWrap{
+				width: 100%;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+			}
 			.size{
 				display: flex;
 				flex-flow: row wrap;
-				justify-content: space-between;
 				margin-top: width(-12px);
 				div{
+					margin-right: width(10px);
 					cursor: pointer;
-					width: width(68px);
+					width: width(63px);
 					height: width(32px);
 					padding: 0 width(8px);
 					background-color: rgba(0,0,0,.05);
@@ -44,6 +50,9 @@
 					&:hover:not(.sizeActive){
 					background-color: rgba(0,0,0,.1);	
 					}
+				}
+				div:nth-child(4n+4){
+					margin-right: 0!important;
 				}
 				.sizeActive{
 					background-color: black;
