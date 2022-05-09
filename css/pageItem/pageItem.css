@@ -199,7 +199,7 @@ header {
   align-items: flex-start;
   margin-top: 1.9749835418vw; }
   .contItem .option {
-    top: 70px;
+    top: 4.6082949309vw;
     position: sticky;
     width: 23.1073074391vw;
     padding: 2.1066491113vw;
@@ -229,7 +229,7 @@ header {
     z-index: -1; }
 
 .imgTub {
-  top: 80px;
+  top: 5.2666227781vw;
   position: sticky;
   z-index: 100;
   display: flex;
