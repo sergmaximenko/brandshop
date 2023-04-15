@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Brandshop</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/pageItem/pageItem.css" >
+	<link rel="stylesheet" href="css/pageItem/pageItem.css">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css" >
+	<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
 	<script src="https://use.fontawesome.com/64249d1b61.js"></script>
 </head>
+
 <body>
 	<header>
-		<a href="index.html"><img src="img/logo.svg" class="logo" alt=""></a>
+		<a href="javascript:void(0)" onclick="route('')"><img src="img/logo.svg" class="logo" alt=""></a>
 		<nav>
-			<li><a href="listBrand.html" onclick="loadItem('all')">Новинки</a></li>
-			<li><a href="listBrand.html" onclick="loadItem('all')">Бренды</a></li>
-			<li><a href="listBrand.html" onclick="loadItem('Мужской')">Мужское</a></li>
-			<li><a href="listBrand.html" onclick="loadItem('Женский')">Женское</a></li>
-			<li><a href="listBrand.html" onclick="loadItem('Унисекс')">Аксессуары</a></li>
+			<li><a href="javascript:void(0)" onclick="route('new')">Новинки</a></li>
+			<li><a href="javascript:void(0)" onclick="route('brands')">Бренды</a></li>
+			<li><a href="javascript:void(0)" onclick="route('man')">Мужское</a></li>
+			<li><a href="javascript:void(0)" onclick="route('woman')">Женское</a></li>
+			<li><a href="javascript:void(0)" onclick="route('unisex')">Аксессуары</a></li>
 		</nav>
 		<div class="icon">
 			<img src="img/lupa.svg" alt="">
@@ -28,212 +30,222 @@
 			<img src="img/profile.svg" alt="">
 		</div>
 	</header>
-		<div class="menu">
+	<div class="menu">
 		<div class="new open_menu display0">
 			<div class="row_1">
-				<a href="listBrand.html" onclick="loadBrand('/js/data/All.json')"><h1>Все бренды</h1></a>
+				<a href="javascript:void(0)" onclick="route('new')">
+					<h1>Все бренды</h1>
+				</a>
 				<ul>
-					<li><a href="list.html" onclick="loadBrand('/js/data/adidasOriginals.json')">adidas Originals</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/C.P.Company.json')">C.P. Company</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/CalvinKleinJeans.json')">Calvin Klein Jeans</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/СASIO.json')">CASIO</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/ChampionReverseWeave.json')">Champion Reverse Weave</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Levis.json')">Levi's</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Nike.json')">Nike</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/PoloRalphLauren.json')">Polo Ralph Lauren</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Ripndip.json')">Ripndip</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/TheNorthFace.json')">The North Face</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/thisisneverthat.json')">thisisneverthat</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/TommyJeans.json')">Tommy Jeans</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Y-3.json')">Y-3</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?C.P. Company')">C.P. Company</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Calvin Klein Jeans')">Calvin Klein Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?CASIO')">CASIO</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Champion Reverse Weave')">Champion Reverse Weave</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?thisisneverthat')">thisisneverthat</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Y-3')">Y-3</a></li>
 				</ul>
 			</div>
 			<div class="row_2">
-				<a href="listBrand.html" onclick="loadBrand('/js/data/All.json')"><h1>Все категории</h1></a>
+				<a href="javascript:void(0)" onclick="route('new')">
+					<h1>Все категории</h1>
+				</a>
 				<ul>
-					<li><a href="listBrand.html" onclick="loadItem('Кеды')">Кеды</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Кроссовки')">Кроссовки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Куртки')">Куртки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Брюки')">Брюки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Джинсы')">Джинсы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Лонгсливы')">Лонгсливы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Рубашки')">Рубашки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Свитера')">Свитера</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Толстовки')">Толстовки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Футболки')">Футболки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Наручные часы')">Наручные часы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Рюкзаки')">Рюкзаки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Сумки')">Сумки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кеды')">Кеды</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кроссовки')">Кроссовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Куртки')">Куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Брюки')">Брюки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Джинсы')">Джинсы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Лонгсливы')">Лонгсливы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Рубашки')">Рубашки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Свитера')">Свитера</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Толстовки')">Толстовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Футболки')">Футболки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Наручные часы')">Наручные часы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Рюкзаки')">Рюкзаки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Сумки')">Сумки</a></li>
 				</ul>
 			</div>
 			<div class="banner">
-				<a href="list.html" onclick="loadBrand('/js/data/CommedesGarconsSHIRT.json')">
+				<a href="javascript:void(0)" onclick="route('list?Comme des Garcons SHIRT')">
 					<div>
 						<img src="img/new/one.jpg" alt="">
 						<h2>Comme des Garcons Wallet</h2>
 					</div>
 				</a>
-				
-				<a href="list.html" onclick="loadBrand('/js/data/PeacefulHooligan.json')">				
+
+				<a href="javascript:void(0)" onclick="route('list?Peaceful Hooligan')">
 					<div>
 						<img src="img/new/two.jpg" alt="">
 						<h2>Peaceful Hooligan</h2>
 					</div>
 				</a>
-				<a href="list.html" onclick="loadBrand('/js/data/MSGM.json')">
+				<a href="javascript:void(0)" onclick="route('list?MSGM')">
 					<div>
 						<img src="img/new/three.jpg" alt="">
 						<h2>MSGM</h2>
-					</div>	
+					</div>
 				</a>
-				<a href="list.html" onclick="loadBrand('/js/data/Crocs.json')">
+				<a href="javascript:void(0)" onclick="route('list?Crocs')">
 					<div>
 						<img src="img/new/four.jpg" alt="">
 						<h2>Crocs</h2>
-				</div>
+					</div>
 				</a>
-			
+
 			</div>
 		</div>
 		<div class="brand open_menu display0">
 			<div class="row_1">
-				<a href="listBrand.html" onclick="loadBrand('/js/data/All.json')"><h1>Все бренды</h1></a>
+				<a href="javascript:void(0)" onclick="route('brands')">
+					<h1>Все бренды</h1>
+				</a>
 				<ul>
-					<li><a href="list.html" onclick="loadBrand('/js/data/adidasOriginals.json')">adidas Originals</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/AlphaIndistries.json')">Alpha Industries</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/BookPublishers.json')">Book Publishers</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/C.P.Company.json')">C.P. Company</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/CalvinKleinJeans.json')">Calvin Klein Jeans</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/CanadaGoose.json')">Canada Goose</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/СASIO.json')">CASIO</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/ChampionReverseWeave.json')">Champion Reverse Weave</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/CommedesGarconsSHIRT.json')">Comme des Garcons SHIRT</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/DanielWellington.json')">Daniel Wellington</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Edwin.json')">Edwin</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Evisu.json')">Evisu</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Hackett.json')">Hackett</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Alpha Indistries')">Alpha Industries</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Book Publishers')">Book Publishers</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?C.P. Company')">C.P. Company</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Calvin Klein Jeans')">Calvin Klein Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Canada Goose')">Canada Goose</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?CASIO')">CASIO</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Champion Reverse Weave')">Champion Reverse Weave</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Comme des Garcons SHIRT')">Comme des Garcons SHIRT</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Daniel Wellington')">Daniel Wellington</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Edwin')">Edwin</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Evisu')">Evisu</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Hackett')">Hackett</a></li>
 				</ul>
 			</div>
 			<div class="row_2">
 				<ul>
-					<li><a href="list.html" onclick="loadBrand('/js/data/HellyHansen.json')">Helly Hansen</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Lacoste.json')">Lacoste</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Levis.json')">Levi's</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/LigneBlanche.json')">Ligne Blanche</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/MA.Strum.json')">MA.Strum</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/maharishi.json')">maharishi</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/MaisonKitsune.json')">Maison Kitsune</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/MARKET.json')">MARKET</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Master-piece.json')">Master-piece</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/MedicomToy.json')">Medicom Toy</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/MKIMiyuki-Zoku.json')">MKI Miyuki-Zoku</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/MSGM.json')">MSGM</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Napapijri.json')">Napapijri</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Helly Hansen')">Helly Hansen</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Lacoste')">Lacoste</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ligne Blanche')">Ligne Blanche</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MA.Strum')">MA.Strum</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?maharishi')">maharishi</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Maison Kitsune')">Maison Kitsune</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MARKET')">MARKET</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Master-piece')">Master-piece</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Medicom Toy')">Medicom Toy</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MKI Miyuki-Zoku')">MKI Miyuki-Zoku</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MSGM')">MSGM</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Napapijri')">Napapijri</a></li>
 				</ul>
 			</div>
 			<div class="row_3">
 				<ul>
-					<li><a href="list.html" onclick="loadBrand('/js/data/NativeUnion.json')">Native Union</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/NewBalance.json')">New Balance</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Nike.json')">Nike</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/NorseProjects.json')">Norse Projects</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Oakley.json')">Oakley</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/PeacefulHooligan.json')">Peaceful Hooligan</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/PoloRalphLauren.json')">Polo Ralph Lauren</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Porter-Yoshida&Co.json')">Porter-Yoshida & Co</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Puma.json')">Puma</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/RAINS.json')">RAINS</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Ray-Ban.json')">Ray-Ban</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Reebok.json')">Reebok</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Ripndip.json')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Native Union')">Native Union</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?New Balance')">New Balance</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Norse Projects')">Norse Projects</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Oakley')">Oakley</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Peaceful Hooligan')">Peaceful Hooligan</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Porter-Yoshida & Co')">Porter-Yoshida & Co</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Puma')">Puma</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?RAINS')">RAINS</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ray-Ban')">Ray-Ban</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Reebok')">Reebok</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip')">Ripndip</a></li>
 				</ul>
 			</div>
 			<div class="row_4">
 				<ul>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Sandqvist.json')">Sandqvist</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Seiko.json')">Seiko</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/StoneIsland.json')">Stone Island</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/TheNorthFace.json')">The North Face</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/thisisneverthat.json')">thisisneverthat</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Timberland.json')">Timberland</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Timex.json')">Timex</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/TommyJeans.json')">Tommy Jeans</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/uniformExperiment.json')">uniform experiment</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/UniversalWorks.json')">Universal Works</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Vans.json')">Vans</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Y-3.json')">Y-3</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/YEEZY.json')">YEEZY</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Sandqvist')">Sandqvist</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Seiko')">Seiko</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Stone Island')">Stone Island</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?thisisneverthat')">thisisneverthat</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Timberland')">Timberland</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Timex')">Timex</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?uniform Experiment')">uniform experiment</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Universal Works')">Universal Works</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Vans')">Vans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Y-3')">Y-3</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?YEEZY')">YEEZY</a></li>
 				</ul>
 			</div>
 			<div class="banner">
-			<a href="list.html" onclick="loadBrand('/js/data/Reebok.json')">
-				<div>
-				<img src="img/brand/one.jpg" alt="">
-				<h2>Reebok</h2>
-				</div>
-			</a>
+				<a href="javascript:void(0)" onclick="route('list?Reebok')">
+					<div>
+						<img src="img/brand/one.jpg" alt="">
+						<h2>Reebok</h2>
+					</div>
+				</a>
 
-			<a href="list.html" onclick="loadBrand('/js/data/TheNorthFace.json')">
-				<div>
-					<img src="img/brand/two.jpg" alt="">
-					<h2>The north face</h2>
-				</div>
-			</a>
-	
-				
+				<a href="javascript:void(0)" onclick="route('list?The North Face')">
+					<div>
+						<img src="img/brand/two.jpg" alt="">
+						<h2>The north face</h2>
+					</div>
+				</a>
+
+
 			</div>
 		</div>
 		<div class="man open_menu display0">
 			<div class="row_1">
-				<a href="listBrand.html" onclick="loadItem('Мужской')"><h1>Все бренды</h1></a>
+				<a href="javascript:void(0)" onclick="route('man')">
+					<h1>Все бренды</h1>
+				</a>
 				<ul>
-					<li><a href="list.html" onclick="loadItem('Мужской/adidas Originals')">adidas Originals</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/C.P. Company')">C.P. Company</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Comme des Garcons SHIRT')">Comme des Garcons SHIRT</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Edwin')">Edwin</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Lacoste')">Lacoste</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Levis')">Levi's</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Nike')">Nike</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Polo Ralph Lauren')">Polo Ralph Lauren</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Ripndip')">Ripndip</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Stone Island')">Stone Island</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/The North Face')">The North Face</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/thisisneverthat')">thisisneverthat</a></li>
-					<li><a href="list.html" onclick="loadItem('Мужской/Tommy Jeans')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals&Мужской')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?C.P. Company&Мужской')">C.P. Company</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Comme des Garcons SHIRT&Мужской')">Comme des Garcons SHIRT</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Edwin&Мужской')">Edwin</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Lacoste&Мужской')">Lacoste</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis&Мужской')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike&Мужской')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren&Мужской')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip&Мужской')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Stone Island&Мужской')">Stone Island</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face&Мужской')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?thisisneverthat&Мужской')">thisisneverthat</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans&Мужской')">Tommy Jeans</a></li>
 				</ul>
 			</div>
 			<div class="row_2">
-				<a href="listBrand.html" onclick="loadItem('Мужской')"><h1>Все категории</h1></a>
+				<a href="javascript:void(0)" onclick="route('man')">
+					<h1>Все категории</h1>
+				</a>
 				<ul>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Кроссовки')">Кроссовки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Ботинки')">Ботинки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Кеды')">Кеды</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Куртки')">Куртки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Свитера')">Свитера</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Толстовки')">Толстовки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Рубашки')">Рубашки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Лонгсливы')">Лонгсливы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Поло')">Поло</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Футболки')">Футболки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Джинсы')">Джинсы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Брюки')">Брюки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Мужской/Шорты')">Шорты</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Кроссовки')">Кроссовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Ботинки')">Ботинки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Кеды')">Кеды</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Куртки')">Куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Свитера')">Свитера</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Толстовки')">Толстовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Рубашки')">Рубашки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Лонгсливы')">Лонгсливы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Поло')">Поло</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Футболки')">Футболки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Джинсы')">Джинсы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Брюки')">Брюки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Шорты')">Шорты</a></li>
 				</ul>
 			</div>
 			<div class="banner">
-				<a href="listBrand.html" onclick="loadItem('Мужской/Футболки')">
+				<a href="javascript:void(0)" onclick="route('brand?Мужской&Футболки')">
 					<div>
 						<img src="img/man/one.jpg" alt="">
 						<h2>Футболки</h2>
 					</div>
 				</a>
-				<a href="listBrand.html" onclick="loadItem('Мужской/Брюки')">
+				<a href="javascript:void(0)" onclick="route('brand?Мужской&Брюки')">
 					<div>
 						<img src="img/man/two.jpg" alt="">
 						<h2>Брюки</h2>
 					</div>
 				</a>
-				<a href="listBrand.html" onclick="loadItem('Мужской/Кроссовки')">
+				<a href="javascript:void(0)" onclick="route('brand?Мужской&Кроссовки')">
 					<div>
 						<img src="img/man/three.jpg" alt="">
 						<h2>Кроссовки</h2>
@@ -243,49 +255,53 @@
 		</div>
 		<div class="woman open_menu display0">
 			<div class="row_1">
-				<a href="listBrand.html" onclick="loadItem('Женский')"><h1>Все бренды</h1></a>
+				<a href="javascript:void(0)" onclick="route('woman')">
+					<h1>Все бренды</h1>
+				</a>
 				<ul>
-					<li><a href="list.html" onclick="loadItem('Женский/adidas Originals')">adidas Originals</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Canada Goose')">Canada Goose</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Champion Reverse Weave')">Champion Reverse Weave</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Levis')">Levi's</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Maison Kitsune')">Maison Kitsune</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/MSGM')">MSGM</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Nike')">Nike</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Polo Ralph Lauren')">Polo Ralph Lauren</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Puma')">Puma</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Reebok')">Reebok</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/The North Face')">The North Face</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Tommy Jeans')">Tommy Jeans</a></li>
-					<li><a href="list.html" onclick="loadItem('Женский/Y-3')">Y-3</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals&Женский')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Canada Goose&Женский')">Canada Goose</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Champion Reverse Weave&Женский')">Champion Reverse Weave</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis&Женский')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Maison Kitsune&Женский')">Maison Kitsune</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MSGM&Женский')">MSGM</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike&Женский')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren&Женский')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Puma&Женский')">Puma</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Reebok&Женский')">Reebok</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face&Женский')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans&Женский')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Y-3&Женский')">Y-3</a></li>
 				</ul>
 			</div>
 			<div class="row_2">
-				<a href="listBrand.html" onclick="loadItem('Женский')"><h1>Все категории</h1></a>
+				<a href="javascript:void(0)" onclick="route('woman')">
+					<h1>Все категории</h1>
+				</a>
 				<ul>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Кроссовки')">Кроссовки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Ботинки')">Ботинки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Кеды')">Кеды</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Куртки')">Куртки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Джинсовые куртки')">Джинсовые куртки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Толстовки')">Толстовки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Олимпийки')">Олимпийки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Рубашки')">Рубашки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Лонгсливы')">Лонгсливы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Футболки')">Футболки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Джинсы')">Джинсы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Брюки')">Брюки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Женский/Юбки')">Юбки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Кроссовки')">Кроссовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Ботинки')">Ботинки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Кеды')">Кеды</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Куртки')">Куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Джинсовые куртки')">Джинсовые куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Толстовки')">Толстовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Олимпийки')">Олимпийки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Рубашки')">Рубашки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Лонгсливы')">Лонгсливы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Футболки')">Футболки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Джинсы')">Джинсы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Брюки')">Брюки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Юбки')">Юбки</a></li>
 				</ul>
 			</div>
 			<div class="banner">
-				<a href="listBrand.html" onclick="loadItem('Женский/Джинсы')">
+				<a href="javascript:void(0)" onclick="route('brand?Женский&Джинсы')">
 					<div>
 						<img src="img/woman/one.jpg" alt="">
 						<h2>Джинсы</h2>
 					</div>
 				</a>
-				<a href="listBrand.html" onclick="loadItem('Женский/Кроссовки')">
+				<a href="javascript:void(0)" onclick="route('brand?Женский&Кроссовки')">
 					<div>
 						<img src="img/woman/two.jpg" alt="">
 						<h2>Кроссовки</h2>
@@ -295,83 +311,87 @@
 		</div>
 		<div class="acces open_menu display0">
 			<div class="row_1">
-				<a href="listBrand.html" onclick="loadItem('Унисекс')"><h1>Все бренды</h1></a>
+				<a href="javascript:void(0)" onclick="route('unisex')">
+					<h1>Все бренды</h1>
+				</a>
 				<ul>
-					<li><a href="list.html" onclick="loadBrand('/js/data/BookPublishers.json')">Book Publishers</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/BubbleGum.json')">Bubble Gum</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/СASIO.json')">CASIO</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/DanielWellington.json')">Daniel Wellington</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/LigneBlanche.json')">Ligne Blanche</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Master-piece.json')">Master-piece</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/NativeUnion.json')">Native Union</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Nike.json')">Nike</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/PoloRalphLauren.json')">Polo Ralph Lauren</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Ray-Ban.json')">Ray-Ban</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Ripndip.json')">Ripndip</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Timex.json')">Timex</a></li>
-					<li><a href="list.html" onclick="loadBrand('/js/data/Victorinox.json')">Victorinox</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Book Publishers&Унисекс')">Book Publishers</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Bubble Gum&Унисекс')">Bubble Gum</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?CASIO&Унисекс')">CASIO</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Daniel Wellington&Унисекс')">Daniel Wellington</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ligne Blanche&Унисекс')">Ligne Blanche</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Master-piece&Унисекс')">Master-piece</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Native Union&Унисекс')">Native Union</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike&Унисекс')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren&Унисекс')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ray-Ban&Унисекс')">Ray-Ban</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip&Унисекс')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Timex&Унисекс')">Timex</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Victorinox&Унисекс')">Victorinox</a></li>
 				</ul>
 			</div>
 			<div class="row_2">
-				<a href="listBrand.html" onclick="loadItem('Унисекс')"><h1>Все категории</h1></a>
+				<a href="javascript:void(0)" onclick="route('unisex')">
+					<h1>Все категории</h1>
+				</a>
 				<ul>
-					<li><a href="listBrand.html" onclick="loadItem('Шапки')">Шапки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Шарфы')">Шарфы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Наручные часы')">Наручные часы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Солнцезащитные очки')">Солнцезащитные очки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Кошельки')">Кошельки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Ремни')">Ремни</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Кепки')">Кепки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Панамы')">Панамы</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Нижнее бельё')">Нижнее белье</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Носки')">Носки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Сумки')">Сумки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Рюкзаки')">Рюкзаки</a></li>
-					<li><a href="listBrand.html" onclick="loadItem('Косметички')">Косметика</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Шапки')">Шапки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Шарфы')">Шарфы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Наручные часы')">Наручные часы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Солнцезащитные очки')">Солнцезащитные очки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кошельки')">Кошельки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Ремни')">Ремни</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кепки')">Кепки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Панамы')">Панамы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Нижнее бельё')">Нижнее белье</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Носки')">Носки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Сумки')">Сумки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Рюкзаки')">Рюкзаки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Косметички')">Косметика</a></li>
 				</ul>
 			</div>
 			<div class="banner">
-				<a href="listBrand.html" onclick="loadItem('Кепки')">
-				<div>
-					<img src="img/acces/one.jpg" alt="">
-					<h2>Кепки</h2>
-				</div>	
+				<a href="javascript:void(0)" onclick="route('brand?All&Кепки')">
+					<div>
+						<img src="img/acces/one.jpg" alt="">
+						<h2>Кепки</h2>
+					</div>
 				</a>
-				
-				<a href="listBrand.html" onclick="loadItem('Наручные часы')">
-				<div>
-					<img src="img/acces/two.jpg" alt="">
-					<h2>Наручные часы</h2>
-				</div>	
+
+				<a href="javascript:void(0)" onclick="route('brand?All&Наручные часы')">
+					<div>
+						<img src="img/acces/two.jpg" alt="">
+						<h2>Наручные часы</h2>
+					</div>
 				</a>
-				
-				<a href="listBrand.html" onclick="loadItem('Сумки')">
-				<div>
-					<img src="img/acces/three.jpg" alt="">
-					<h2>Сумки</h2>
-				</div>	
+
+				<a href="javascript:void(0)" onclick="route('brand?All&Сумки')">
+					<div>
+						<img src="img/acces/three.jpg" alt="">
+						<h2>Сумки</h2>
+					</div>
 				</a>
-				
-				<a href="listBrand.html" onclick="loadItem('Солнцезащитные очки')">
-				<div>
-					<img src="img/acces/four.jpg" alt="">
-					<h2>Солнцезащитные очки</h2>
-				</div>	
+
+				<a href="javascript:void(0)" onclick="route('brand?All&Солнцезащитные очки')">
+					<div>
+						<img src="img/acces/four.jpg" alt="">
+						<h2>Солнцезащитные очки</h2>
+					</div>
 				</a>
 			</div>
 		</div>
-		</div>
-	<div class="list">
-	<div class="navSort">
-		<div class="nav opacity0">
-			<a href="">Главная</a>
-			<a href="">Бренды</a>
-			<a href="">adidas Originals</a>
-		</div>
 	</div>
-	<div class="contItem">
-		<div class="imgTub">
-		<!--	<div>
+	<div class="list">
+		<div class="navSort">
+			<div class="nav opacity0">
+				<!--	<a href="">Главная</a>
+			<a href="">Бренды</a>
+			<a href="">adidas Originals</a> -->
+			</div>
+		</div>
+		<div class="contItem">
+			<div class="imgTub">
+				<!--	<div>
 				<img src="./img/test/1.jpg" alt="">
 				<div class="shadow"></div>
 			</div>
@@ -384,19 +404,19 @@
 				<div class="shadow"></div>
 			</div>
 			-->
-		</div>
-		<div class="imgTubWrap"></div>
-		<div class="imgWin">
-		
-		<!--	<div class="image-zoom">
+			</div>
+			<div class="imgTubWrap"></div>
+			<div class="imgWin">
+
+				<!--	<div class="image-zoom">
 				<img src="./img/test/1.jpg" alt="">
 				<div class="image-zoom-block"></div>
 			</div>
 			-->
-		</div>
-		<div class="option">
-			<div class="optionSize">
-				<!-- <h1>adidas Originals</h1>
+			</div>
+			<div class="option">
+				<div class="optionSize">
+					<!-- <h1>adidas Originals</h1>
 				<h2>Кросссовки Superstar 82</h2> 
 				<h3>Доступные размеры</h3>
 				<div class="sizeWrap">
@@ -410,28 +430,29 @@
 						<div>42 EU</div>
 				</div>
 				</div> -->
-			</div>
-			<div class="price">
-				<h1>20 990 ₽</h1>
-				<div class="tub">
-				<div class="addBasketWrap">
-						<div class="addBasket">
-						<h1>Добавить в корзину</h1>
-						<h2>36 EU</h2>
+				</div>
+				<div class="price">
+					<h1>20 990 ₽</h1>
+					<div class="tub">
+						<div class="addBasketWrap">
+							<div class="addBasket">
+								<h1>Добавить в корзину</h1>
+								<h2>36 EU</h2>
+							</div>
+						</div>
+
+						<div class="addBasketTwo display0">
+							<div><span class="min">–</span><span><span class="num">1</span> в корзине</span>
+								<span class="plus">+</span></div>
+							<div>Оформить заказ</div>
+						</div>
 					</div>
 				</div>
-				
-					<div class="addBasketTwo display0">
-						<div><span class="min">–</span><span><span 	class="num">1</span> в корзине</span>
-						<span class="plus">+</span></div>
-						<div>Оформить заказ</div>
+				<div class="info">
+					<div>Описание<div><span class="span1"></span><span class="span2"></span></div>
 					</div>
-				</div>
-			</div>
-			<div class="info">
-				<div>Описание<span>+</span></div>
 					<ul class="infoItem">
-					<!--	<li><span>–</span>Материал: Верх - текстиль; Подкладка - текстиль; Низ - резина</li>
+						<!--	<li><span>–</span>Материал: Верх - текстиль; Подкладка - текстиль; Низ - резина</li>
 						<li><span>–</span>Страна-производитель: Вьетнам</li>
 						<li><span>–</span>Лимитированная коллаборация adidas Originals x Pharrell Williams</li>
 						<li><span>–</span>Верх из материала Primeknit</li>
@@ -440,8 +461,9 @@
 						<li><span>–</span>Промежуточная подошва Boost</li>
 						<li><span>–</span>Износостойкая подметка</li>
 						<li><span>–</span>Сменная пара шнурков в комплекте</li> -->
-					</ul> 
-				<div>Доставка и оплата<span>+</span></div>
+					</ul>
+					<div>Доставка и оплата<div><span class="span1"></span><span class="span2"></span></div>
+					</div>
 					<ul>
 						<h1>Доставка по Москве</h1>
 						<li class="bold"><span>–</span>При покупке от 15000 рублей - бесплатная доставка курьером по Москве</li>
@@ -459,9 +481,10 @@
 						<h1>Доставка в Белорусь и Казахстан</h1>
 						<li><span>–</span>СДЭК Беларусь (стоимость – 690 рублей, ориентировочно 2-5 рабочих дней)</li>
 						<li><span>–</span>СДЭК Казахстан (стоимость – 1100 рублей, ориентировочно 11-17 рабочих дней)</li>
-						<p>Более подробная информация в разделе <span class="opa">Доставка</span></p>
+						<p>Более подробная информация в разделе <span class="opa" onclick="route('faq/2')">Доставка</span></p>
 					</ul>
-				<div>Возврат<span>+</span></div>
+					<div>Возврат<div><span class="span1"></span><span class="span2"></span></div>
+					</div>
 					<ul>
 						<h1>Розничный магазин</h1>
 						<p>Возврат товара надлежащего качества осуществляется в течение 14 дней в том магазине, где он был приобретен.</p>
@@ -470,107 +493,155 @@
 						<p>Возврат товара, приобретенного в интернет-магазине курьерской доставкой по Москве, осуществляется только по адресу: Москва, Петровский бульвар, дом 21, на кассе магазина.</p>
 						<p>Не подошедший товар необходимо отправить нам обратно через Почту России или EMS по адресу Куда: 125124, Москва, ул. Расковой, дом 14 кому: ООО "БШ Стор"</p>
 						<p>К возврату принимаются изделия в товарном виде: без следов эксплуатации, с заводскими бирками и в оригинальной упаковке.</p>
-						<p>Подробнее информация в разделе <span class="opa">возврат</span>.</p>
+						<p>Подробнее информация в разделе <span class="opa" onclick="route('faq/3')">возврат</span>.</p>
 					</ul>
+				</div>
+				<a href="javascript:void(0)" class="allItemA">
+					<div class="allItem">
+						<div>Больше от adidas Originals</div>
+					</div>
+				</a>
 			</div>
-			<a href="list.html" class="allItemA">
-			<div class="allItem">
-				<div >Больше от adidas Originals</div>
-			</div>
-			</a>
+			<div class="optionWrap"></div>
 		</div>
-		<div class="optionWrap"></div>
-	</div>
 	</div>
 	<div class="slider">
 		<h1>Вы недавно смотрели</h1>
-<div class="owl-carousel owl-theme">
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/one/one.jpg" alt="">
-    <h1>adidas Originals</h1>
-	<p><span>Мужская футболка</span><span>Trefoil Crew</span></p>
-    <h3>3 190 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/one/two.jpg" alt="">
-    <h1>Peaceful Hooligan</h1>
-	<p><span>Мужская футболка</span><span>Outline Dove</span></p>
-    <h3>3 990 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/one/three.jpg" alt="">
-    <h1>adidas Originals</h1>
-	<p><span>Коплект носков</span><span>3-Pack Ankle Mid-Cut Crew</span> </p>
-    <h3>1 290 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/one/four.jpg" alt="">
-    <h1>adidas Originals</h1>
-	<p><span>Мужские кроссовки</span><span>Superstar</span></p>
-    <h3>12 190 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/two/one.jpg" alt="">
-    <h1>Stone Island</h1>
-	<p><span>Мужские шорты</span><span>Supima Cotton Twill Stretch-TC Garment Dyed</span></p>
-    <h3>27 190 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/two/two.jpg" alt="">
-    <h1>Saucony</h1>
-	<p><span>Мужские кроссовки</span><span>Shadow 6000</span></p>
-    <h3>15 790 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/two/three.jpg" alt="">
-    <h1>Nike</h1>
-	<p><span>Комплект носков</span><span>3-Pack Everyday Essential Crew</span></p>
-    <h3>1 290 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/two/four.jpg" alt="">
-    <h1>adidas Originals</h1>
-	<p><span>Кроссовки</span><span>Handball Spezial</span></p>
-    <h3>10 490 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/three/one.jpg" alt="">
-    <h1>CASIO</h1>
-	<p><span>Наручные часы</span><span>Vintage A168WEGG-1BEF</span></p>
-    <h3>7 590 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/three/two.jpg" alt="">
-    <h1>Levi's</h1>
-	<p><span>Мужская джинсовая куртка</span><span>Trucker</span></p>
-    <h3>11 390 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/three/three.jpg" alt="">
-    <h1>adidas Originals</h1>
-	<p><span>Мужская олимпийка</span><span>Adicolor Classics Primeblue SST</span></p>
-    <h3>7 690 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/three/four.jpg" alt="">
-    <h1>Puma</h1>
-	<p><span>Кроссовки</span><span>Suede Classic XXI</span></p>
-    <h3>8 990 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/four/one.jpg" alt="">
-    <h1>Ligne Blanch</h1>
-	<p><span>Тарелка</span><span>Rene Magritte Le Pelerin Beige Medium</span></p>
-    <h3>9 990 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/four/two.jpg" alt="">
-    <h1>Lacoste</h1>
-	<p><span>Мужские кроссовки</span><span>Y-4-Y V2 0722 1 SMA</span></p>
-    <h3>18 690 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/four/three.jpg" alt="">
-    <h1>adidas Originals</h1>
-	<p><span>Кроссовки</span><span>x Parley Stan Smith</span></p>
-    <h3>13 190 ₽</h3>
-    </div>
-    <div class="item"><div class="shadow"></div><img src="img/slider/top/four/four.jpg" alt="">
-    <h1>G-Shock</h1>
-	<p><span>Наручные часы</span><span>G-SHOCK GA-2100SKE-7AER Skeleton Series</span></p>
-    <h3>15 390 ₽</h3>
-    </div>
-</div>
+		<div class="owl-carousel owl-theme">
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+			<a href="javascript:void(0)">
+				<div class="item">
+					<div class="shadow"></div><img src="" alt="">
+					<h1></h1>
+					<p><span></span><span></span></p>
+					<h3></h3>
+				</div>
+			</a>
+		</div>
 	</div>
-	
+
 	<div class="basket display0">
-	<div class="cont">
-		<!-- <div>
+		<div class="cont">
+			<!-- <div>
 			<div><img src="img/data/adidas/krosovki/1.jpg" alt=""></div>
 			<div>
 				<h1>adidas Originals</h1>
@@ -578,30 +649,30 @@
 				<p><span>– </span><span>2</span><span> +</span><span>41.5 EU</span></p>
 			</div>
 			<div>
-				<p>13 990P<span>+</span></p>
+				<p>13 990P<div><span class="span1"></span><span class="span2"></span></div></p>
 			</div>
 		</div> -->
-	</div>
-	<!--<div class="butBasket">
+		</div>
+		<!--<div class="butBasket">
 		<div>Оформить заказ</div>
 		<div>Общая стоимость:<span>4 111 Р</span></div>
 	</div> -->
-	<!--<div class="basketNul">
+		<!--<div class="basketNul">
 		<h1>Корзина</h1>
 		<p>Вы пока что еще ничего не добавили в корзину</p>
 		<div>Перейти к новинкам</div>
 	</div>-->
 	</div>
-	
-		<footer>
+
+	<footer>
 		<div>
 			<h1 class="bot">Подписаться на новости</h1>
 			<input type="email" placeholder="Введите email">
 			<div>
-			<a href="https://vk.com/brandshop_ru" class="icon"><img src="img/footer/vk.svg" alt=""></a>
-			<a href="https://www.youtube.com/user/brandshoprus" class="icon"><img src="img/footer/youtobe.svg" alt=""></a>
-			<a href="https://t.me/brandshopru" class="icon"><img src="img/footer/telega.svg" alt=""></a>	
-				
+				<a href="https://vk.com/brandshop_ru" class="icon"><img src="img/footer/vk.svg" alt=""></a>
+				<a href="https://www.youtube.com/user/brandshoprus" class="icon"><img src="img/footer/youtobe.svg" alt=""></a>
+				<a href="https://t.me/brandshopru" class="icon"><img src="img/footer/telega.svg" alt=""></a>
+
 			</div>
 		</div>
 		<div class="bot"></div>
@@ -615,66 +686,43 @@
 		</div>
 		<div>
 			<h1>Поддержка</h1>
-			<a href="#" onclick="return false">Помощь покупателю</a>
-			<a href="#" onclick="return false">Доставка и оплата</a>
-			<a href="#" onclick="return false">Возврат</a>
-			<a href="#" onclick="return false">Программа лояльности</a>
+			<a href="javascript:void(0)" onclick="route('faq')">Помощь покупателю</a>
+			<a href="javascript:void(0)" onclick="route('faq/2')">Доставка и оплата</a>
+			<a href="javascript:void(0)" onclick="route('faq/3')">Возврат</a>
+			<a href="javascript:void(0)" onclick="route('faq/5')">Программа лояльности</a>
 		</div>
 		<div>
 			<h1>Информация</h1>
-			<a href="#" onclick="return false">Контакты</a>
-			<a href="#" onclick="return false">Магазины</a>
-			<a href="#" onclick="return false">Блог</a>
-			<a href="#" onclick="return false">Вакансии</a>
+			<a href="javascript:void(0)" onclick="route('contacts')">Контакты</a>
+			<a href="javascript:void(0)" onclick="route('address')">Магазины</a>
 		</div>
+
 	</footer>
-	<div class="footer">
-		<h1>© BRANDSHOP, 2022</h1>
-		<a href="#" onclick="return false">Пользовательское соглашение</a>
-		<a href="#" onclick="return false">Политика о конфиденциальности</a>
-		<a href="#" onclick="return false">Карта сайта</a>
-		<img src="img/footer/1.png" alt="">
-		<img src="img/footer/2.png" alt="">
-		<img src="img/footer/3.png" alt="">
-		<img src="img/footer/4.png" alt="">
-		<div class="bot"></div>
-		<img src="img/footer/5.svg" alt="">
-		<img src="img/footer/6.svg" alt="">
-		<img src="img/footer/7.svg" alt="">
-		<img src="img/footer/8.svg" alt="">
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+	<script src="js/slider.js" defer></script>
 	<script src="js/pageItem.js" defer></script>
 	<script src="js/menu.js"></script>
-	<script src="js/data.js"></script>
 	<script src="js/basket.js"></script>
 	<script src="js/pageItemSize.js"></script>
 	<script src="js/ItemCreate.js"></script>
 	<script src="js/lupa.js"></script>
+	<script src="js/imgScroll.js"></script>
 	<script src="js/request.js" defer></script>
-	
-	
-	<script
-  	src="https://code.jquery.com/jquery-3.5.1.min.js"
-  	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  	crossorigin="anonymous"></script>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="OwlCarousel/dist/owl.carousel.min.js"></script>
 
+	<!--
 	<script>$('.owl-carousel').owlCarousel({
     loop:true,
     margin:25,
@@ -695,11 +743,7 @@
         }
     }
 	})</script>
-
-
-
-
-
+-->
 
 
 
@@ -708,4 +752,5 @@
 
 
 </body>
+
 </html>

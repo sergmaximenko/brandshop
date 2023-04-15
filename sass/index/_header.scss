@@ -1,4 +1,4 @@
-header{
+header {
 	z-index: 1000;
 	top: 0;
 	position: fixed;
@@ -10,15 +10,18 @@ header{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	.logo{
+
+	.logo {
 		width: width(36px);
 		height: width(44px);
 	}
-	nav{
+
+	nav {
 		margin-top: width(-13px);
 		position: absolute;
 		margin-left: width(55px);
-		li{
+
+		li {
 			cursor: pointer;
 			padding: 0 width(20px);
 			height: width(70px);
@@ -26,21 +29,25 @@ header{
 			text-align: center;
 			line-height: width(70px);
 			transition: color .1s;
-			&:hover{
+
+			&:hover {
 				color: rgba(0, 0, 0, 0.7);
 			}
 		}
 	}
-	.icon{
+
+	.icon {
 		display: flex;
 		align-items: center;
 		margin-right: width(-15px);
-		img{
+
+		img {
 			cursor: pointer;
 			width: width(50px);
 			height: width(50px);
 			transition: opacity .1s;
-			&:hover{
+
+			&:hover {
 				opacity: .7;
 			}
 		}

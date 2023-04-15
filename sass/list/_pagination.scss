@@ -1,31 +1,37 @@
-	.pagination{
-			width: width(824px);
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: center;
-			position: absolute;
-			right: width(195.6px);
-			bottom: width(50px);
-		li{
+	.pagination {
+		width: width(824px);
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		position: absolute;
+		right: width(195.6px);
+		bottom: width(70px);
+
+		li {
 			margin-left: width(30px);
 			cursor: pointer;
-			color: rgba(0,0,0,.4);
+			color: rgba(0, 0, 0, .4);
 			transition: color .1s;
-			&:active{
+
+			&:active {
 				color: black;
 			}
-			&:hover{
-				color: rgba(0,0,0,.7);
+
+			&:hover {
+				color: rgba(0, 0, 0, .7);
 			}
 		}
-		.active{
+
+		.active {
 			color: black;
 		}
-		i:last-child{
+
+		i:last-child {
 			margin-left: width(30px);
 			cursor: pointer;
 		}
-		i{
+
+		i {
 			cursor: pointer;
 		}
-		}
+	}

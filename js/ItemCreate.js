@@ -1,8 +1,10 @@
-let thisItem = JSON.parse(sessionStorage.item);
+//let thisItem = JSON.parse(sessionStorage.item);
+let thisItem;
 
-
+function itemCrea(){
 let tubImg = document.querySelector('.imgTub');
 let div = document.createElement('div');
+div .classList.add('activeImg')
 let img = document.createElement('img');
 img.src = thisItem.img
 let shadowItem = document.createElement('div');
@@ -140,14 +142,8 @@ addBasketWrap.onclick = function(){
 let allItem = document.querySelector('.allItem div');
 allItem.textContent = 'Больше от' + " " + thisItem.brand;
 let allItemA = document.querySelector('.allItemA');
-let parse = thisItem.brand.replace(/\s/g, '');
-let str = '/js/data/' + parse + '.json';
 allItemA.onclick = function(){
-	loadBrand(str);
+	route(`list?${thisItem.brand}`)
 }
-
-
-
-
-
-
+	
+}

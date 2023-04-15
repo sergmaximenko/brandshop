@@ -1,4 +1,0 @@
-[
-	{"id": "251", "brand": "Bubble Gum", "img": "../img/data/BubbleGum/ж1.jpg", "type": "Жевательная резинка", "model": "Spearmint", "price": "290", "sex": "Унисекс", "category": "Жевательные резинки", "color": "Зелёный", "size": ["ONE SIZE"], "photo": ["../img/data/BubbleGum/ж2.jpg"], "info":["Страна-производитель: Мексика","Вкус: сладкая мята","12 штук в упаковке"]},
-	{"id": "252", "brand": "Bubble Gum", "img": "../img/data/BubbleGum/л1.jpg", "type": "Леденцы", "model": "Cinnamon Curiosly Strong", "price": "289", "sex": "Унисекс", "category": "Леденцы", "color": "Красный", "size": ["ONE SIZE"], "photo": ["../img/data/BubbleGum/л2.jpg"], "info":["Страна-производитель: США","Вкус: мята, пряная корица"]}
-]

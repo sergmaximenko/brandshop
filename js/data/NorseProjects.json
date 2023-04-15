@@ -1,4 +1,0 @@
-[
-	{"id": "202", "brand": "Norse Projects", "img": "../img/data/NorseProjects/ша1.jpg", "type": "Шарф", "model": "Moon Checked Lambswool", "price": "2490", "sex": "Унисекс", "category": "Шарфы", "color": "Серый", "size": ["ONE SIZE"], "photo": ["../img/data/NorseProjects/ша2.jpg"], "info":["Материал: 100% шерсть","Страна-производитель: Соединенное Королевство","Бахрома по краям","Фирменный патч"]},
-	{"id": "203", "brand": "Norse Projects", "img": "../img/data/NorseProjects/кеп1.jpg", "type": "Кепка", "model": "Twill Sports", "price": "3990", "sex": "Унисекс", "category": "Кепки", "color": "Синий", "size": ["ONE SIZE"], "photo": ["../img/data/NorseProjects/кеп2.jpg","../img/data/NorseProjects/кеп3.jpg","../img/data/NorseProjects/кеп4.jpg"], "info":["Материал: 100% хлопок","Страна-производитель: США","Саржевая ткань","6-панельный силуэт","Перфорация сверху","Вышитый брендинг","Регулируемый ремешок с пряжкой"]}
-]

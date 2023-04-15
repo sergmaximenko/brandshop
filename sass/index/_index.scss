@@ -1,29 +1,41 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box!important;
+	box-sizing: border-box !important;
 	font-family: Graphik;
 	font-size: width(14px);
-	li{
+
+	li {
 		list-style-type: none;
 	}
-	a{
+
+	a {
 		color: black;
 		text-decoration: none;
 	}
 }
 
-.display0{
-	display: none!important;
+.display0 {
+	display: none !important;
 }
 
-.mbot{
+.mbot {
 	margin-bottom: width(110px);
 }
-.opacity0{
-	opacity: 0!important;
-}
-.opacity1{
-	opacity: 1!important;
+
+.opacity0 {
+	opacity: 0 !important;
 }
 
+.opacity1 {
+	opacity: 1 !important;
+}
+.burg{
+	display: none;
+}
+.menu_mob{
+	display: none;
+}
+.m_shadow{
+	display: none;
+}

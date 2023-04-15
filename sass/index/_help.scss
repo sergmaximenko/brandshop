@@ -1,0 +1,137 @@
+.tabl {
+	width: width(1110px);
+	height: width(547px);
+	display: flex;
+	flex-flow: row wrap;
+	margin: width(94px) width(195.5px) width(72px);
+	border: width(1px) solid #e6e6e6;
+	border-radius: width(5px);
+
+	div {
+		width: width(368.9px);
+		height: width(273px);
+		padding: width(40px);
+		cursor: pointer;
+		transition: all .1s;
+
+		&:hover {
+			background-color: #f2f2f2;
+		}
+
+		img {
+			width: width(36px);
+			height: width(36px);
+			margin-bottom: width(16px);
+		}
+
+		h1 {
+			font-size: width(24px);
+			font-weight: 300;
+			width: width(295px);
+			line-height: width(27px);
+			margin-bottom: width(24px);
+		}
+
+		p {
+			width: width(295px);
+			color: rgba(0, 0, 0, .4);
+			line-height: width(20px);
+		}
+	}
+
+	a:nth-child(1) {
+		border-right: width(1px) solid #e6e6e6;
+		border-bottom: width(1px) solid #e6e6e6;
+	}
+
+	a:nth-child(2) {
+		border-right: width(1px) solid #e6e6e6;
+		border-bottom: width(1px) solid #e6e6e6;
+	}
+
+	a:nth-child(3) {
+		border-bottom: width(1px) solid #e6e6e6;
+	}
+
+	a:nth-child(4) {
+		border-right: width(1px) solid #e6e6e6;
+	}
+
+	a:nth-child(5) {
+		border-right: width(1px) solid #e6e6e6;
+	}
+}
+
+.faq {
+	margin: width(94px) width(195.5px) width(57px);
+
+	div {
+		cursor: pointer;
+		width: width(1110px);
+		padding: width(32px) 0;
+		border-top: width(1px) solid rgba(0, 0, 0, .1);
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+
+		p {
+			font-size: width(24px);
+			line-height: width(30px);
+		}
+
+		div {
+			width: auto;
+			height: auto;
+			padding: 0;
+		}
+	}
+
+	div:nth-child(1) {
+		border: none;
+	}
+
+	ul {
+		height: auto;
+		transition: height .5s;
+		overflow: hidden;
+
+		li {
+			margin-bottom: width(25px);
+			line-height: width(25px);
+		}
+
+		ul {
+			margin-left: width(20px);
+		}
+	}
+
+	a {
+		color: rgba(0, 0, 0, .4);
+		text-decoration: underline;
+	}
+
+	h1 {
+		font-weight: 100;
+		margin-bottom: width(10px);
+	}
+
+	h2 {
+		margin-bottom: width(25px);
+	}
+
+	.span1 {
+		width: width(17px);
+		height: width(2.5px);
+		background-color: rgba(0, 0, 0, .2);
+	}
+
+	.span2 {
+		width: width(17px);
+		height: width(2.5px);
+		background-color: rgba(0, 0, 0, .2);
+		transform: rotate(90deg);
+		margin-left: width(-16.5px);
+		transition: transform .4s;
+	}
+}

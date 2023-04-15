@@ -1,22 +1,26 @@
-.sex{
+.sex {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	margin-top: width(70px);
 	padding: 0 width(195.5px);
-	div{
+
+	div {
 		cursor: pointer;
 		padding: width(24px) 0 width(16px) 0;
-		img{
+
+		img {
 			width: width(542px);
 			height: width(600px);
 		}
-		h1{
+
+		h1 {
 			font-weight: 400;
 			font-size: width(28px);
 			margin: width(20px) 0 width(10px) width(30px);
 		}
-		h2{
+
+		h2 {
 			display: inline-block;
 			font-size: width(12px);
 			font-weight: 300;
@@ -25,9 +29,10 @@
 			letter-spacing: width(1.6px);
 			border-bottom: width(1px) solid black;
 			padding-bottom: width(3px);
-			&:hover{
-				color: rgba(0,0,0,.3);
-				border-bottom: width(1px) solid rgba(0,0,0,.3);
+
+			&:hover {
+				color: rgba(0, 0, 0, .3);
+				border-bottom: width(1px) solid rgba(0, 0, 0, .3);
 			}
 		}
 	}

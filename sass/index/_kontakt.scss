@@ -1,0 +1,257 @@
+.kontakt {
+	margin-top: width(94px);
+	line-height: width(25px);
+
+	.centr {
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+
+		h1 {
+			font-weight: 100;
+			margin-bottom: width(10px);
+		}
+
+		.tel {
+			font-size: width(18px);
+			font-weight: 300;
+		}
+
+		p {
+			margin-top: width(10px);
+			color: rgba(0, 0, 0, .4);
+			font-size: width(12px);
+		}
+
+		h2 {
+			font-weight: 100;
+			margin-top: width(35px);
+		}
+
+		.mail {
+			color: rgba(0, 0, 0, .4);
+			transition: .1s;
+
+			&:hover {
+				color: black;
+			}
+		}
+
+		a {
+			margin-bottom: width(5px);
+
+			&:after {
+				margin-top: width(-5px);
+				display: block;
+				width: 0;
+				content: "";
+				height: width(.3px) !important;
+				background: black;
+				transition: .3s;
+			}
+
+			&:hover:after {
+				animation: borbot .4s ease;
+				width: 100%;
+			}
+		}
+	}
+
+	.blok {
+		margin: width(40px) width(195.5px) 0;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+
+		img {
+			width: width(542px);
+			height: width(554px);
+			border-radius: width(4px);
+			transition: .2s;
+			cursor: pointer;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+
+		a {
+			color: rgba(0, 0, 0, .4);
+			transition: .1s;
+			display: inline-block;
+
+			&:hover {
+				color: black;
+			}
+
+			&:after {
+				margin-top: width(-5px);
+				display: block;
+				width: 0;
+				content: "";
+				height: width(.3px) !important;
+				background: black;
+				transition: .3s;
+			}
+
+			&:hover:after {
+				animation: borbot .4s ease;
+				width: 100%;
+			}
+		}
+
+		p {
+			width: auto;
+			margin-bottom: width(10px);
+		}
+	}
+
+	.but {
+		height: width(48px);
+		margin: width(10px) width(195.5px) width(40px);
+		text-align: center;
+		line-height: width(48px);
+		background-color: rgba(0, 0, 0, .05);
+		border-radius: 4px;
+		cursor: pointer;
+		transition: .2s;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, .1);
+		}
+	}
+
+	.rekv {
+		margin-left: width(195.5px);
+		margin-bottom: width(72px);
+		color: rgba(0, 0, 0, .4);
+	}
+}
+
+.yandex_map {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100000;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	display: none;
+	transition: 1s;
+
+	.ya_map {
+		filter: grayscale(1);
+		position: absolute;
+		bottom: width(-500px);
+		height: width(500px) !important;
+		background-color: #fff;
+		border-radius: width(5px);
+
+		h1 {
+			font-weight: 100;
+			width: 100%;
+			text-align: center;
+			margin-bottom: width(15px);
+			padding-top: width(20px);
+		}
+
+		h2 {
+			font-weight: 100;
+			width: 100%;
+			text-align: center;
+		}
+
+		h3 {
+			font-weight: 100;
+			width: 100%;
+			text-align: center;
+			margin-bottom: width(10px);
+			margin-top: width(-5px);
+		}
+
+		p {
+			position: absolute !important;
+			top: width(20px) !important;
+			right: width(20px) !important;
+			font-size: width(40px);
+			transform: rotate(45deg);
+			cursor: pointer;
+		}
+	}
+
+	#map {
+		width: width(980px) !important;
+		height: width(500px) !important;
+	}
+}
+
+#map > ymaps {
+	border-radius: width(5px);
+	overflow: hidden;
+}
+
+.mapAnim {
+	animation: maps .4s;
+}
+
+.mapAnimRev {
+	animation: mapsRev .2s;
+
+}
+
+@keyframes maps {
+	0% {
+		bottom: width(-500px);
+	}
+
+	100% {
+		bottom: width(200px);
+	}
+}
+
+@keyframes mapsRev {
+	0% {
+		bottom: width(200px);
+	}
+
+	100% {
+		bottom: width(-500px);
+	}
+}
+
+.ymaps-2-1-79-float-button {
+	display: flex !important;
+	flex-flow: row nowrap !important;
+	align-items: center !important;
+}
+
+.ymaps-2-1-79-traffic__icon {
+	margin-left: width(5px) !important;
+}
+
+.ymaps-2-1-79-listbox__button {
+	display: flex !important;
+	flex-flow: row nowrap !important;
+	align-items: center !important;
+	width: width(90px) !important;
+}
+
+.ymaps-2-1-79-listbox__button-icon {
+	margin-left: width(5px) !important;
+}
+
+.ymaps-2-1-79-listbox__button-text {
+	margin-left: width(5px) !important;
+}
+
+.ymaps-2-1-79-float-button-icon {
+	margin-left: width(6px) !important;
+}
+
+.ymaps-2-1-79-copyright {
+	display: none !important;
+}

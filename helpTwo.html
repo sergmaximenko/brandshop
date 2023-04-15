@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Brandshop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../css/index/style.css">
+	<script src="https://use.fontawesome.com/64249d1b61.js"></script>
+	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+		<a href="javascript:void(0)" onclick="route('')"><img src="img/logo.svg" class="logo" alt=""></a>
+		<nav>
+			<li><a href="javascript:void(0)" onclick="route('new')">Новинки</a></li>
+			<li><a href="javascript:void(0)" onclick="route('brands')">Бренды</a></li>
+			<li><a href="javascript:void(0)" onclick="route('man')">Мужское</a></li>
+			<li><a href="javascript:void(0)" onclick="route('woman')">Женское</a></li>
+			<li><a href="javascript:void(0)" onclick="route('unisex')">Аксессуары</a></li>
+		</nav>
+		<div class="icon">
+			<img src="img/lupa.svg" alt="">
+			<img src="img/bag.svg" alt="">
+			<img src="img/profile.svg" alt="">
+		</div>
+	</header>
+	<div class="menu">
+		<div class="new open_menu display0">
+			<div class="row_1">
+				<a href="javascript:void(0)" onclick="route('new')">
+					<h1>Все бренды</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?C.P. Company')">C.P. Company</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Calvin Klein Jeans')">Calvin Klein Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?CASIO')">CASIO</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Champion Reverse Weave')">Champion Reverse Weave</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?thisisneverthat')">thisisneverthat</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Y-3')">Y-3</a></li>
+				</ul>
+			</div>
+			<div class="row_2">
+				<a href="javascript:void(0)" onclick="route('new')">
+					<h1>Все категории</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кеды')">Кеды</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кроссовки')">Кроссовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Куртки')">Куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Брюки')">Брюки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Джинсы')">Джинсы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Лонгсливы')">Лонгсливы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Рубашки')">Рубашки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Свитера')">Свитера</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Толстовки')">Толстовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Футболки')">Футболки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Наручные часы')">Наручные часы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Рюкзаки')">Рюкзаки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Сумки')">Сумки</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<a href="javascript:void(0)" onclick="route('list?Comme des Garcons SHIRT')">
+					<div>
+						<img src="img/new/one.jpg" alt="">
+						<h2>Comme des Garcons Wallet</h2>
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" onclick="route('list?Peaceful Hooligan')">
+					<div>
+						<img src="img/new/two.jpg" alt="">
+						<h2>Peaceful Hooligan</h2>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="route('list?MSGM')">
+					<div>
+						<img src="img/new/three.jpg" alt="">
+						<h2>MSGM</h2>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="route('list?Crocs')">
+					<div>
+						<img src="img/new/four.jpg" alt="">
+						<h2>Crocs</h2>
+					</div>
+				</a>
+
+			</div>
+		</div>
+		<div class="brand open_menu display0">
+			<div class="row_1">
+				<a href="javascript:void(0)" onclick="route('brands')">
+					<h1>Все бренды</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Alpha Indistries')">Alpha Industries</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Book Publishers')">Book Publishers</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?C.P. Company')">C.P. Company</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Calvin Klein Jeans')">Calvin Klein Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Canada Goose')">Canada Goose</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?CASIO')">CASIO</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Champion Reverse Weave')">Champion Reverse Weave</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Comme des Garcons SHIRT')">Comme des Garcons SHIRT</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Daniel Wellington')">Daniel Wellington</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Edwin')">Edwin</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Evisu')">Evisu</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Hackett')">Hackett</a></li>
+				</ul>
+			</div>
+			<div class="row_2">
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?Helly Hansen')">Helly Hansen</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Lacoste')">Lacoste</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ligne Blanche')">Ligne Blanche</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MA.Strum')">MA.Strum</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?maharishi')">maharishi</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Maison Kitsune')">Maison Kitsune</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MARKET')">MARKET</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Master-piece')">Master-piece</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Medicom Toy')">Medicom Toy</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MKI Miyuki-Zoku')">MKI Miyuki-Zoku</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MSGM')">MSGM</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Napapijri')">Napapijri</a></li>
+				</ul>
+			</div>
+			<div class="row_3">
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?Native Union')">Native Union</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?New Balance')">New Balance</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Norse Projects')">Norse Projects</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Oakley')">Oakley</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Peaceful Hooligan')">Peaceful Hooligan</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Porter-Yoshida & Co')">Porter-Yoshida & Co</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Puma')">Puma</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?RAINS')">RAINS</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ray-Ban')">Ray-Ban</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Reebok')">Reebok</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip')">Ripndip</a></li>
+				</ul>
+			</div>
+			<div class="row_4">
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?Sandqvist')">Sandqvist</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Seiko')">Seiko</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Stone Island')">Stone Island</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?thisisneverthat')">thisisneverthat</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Timberland')">Timberland</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Timex')">Timex</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?uniform Experiment')">uniform experiment</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Universal Works')">Universal Works</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Vans')">Vans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Y-3')">Y-3</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?YEEZY')">YEEZY</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<a href="javascript:void(0)" onclick="route('list?Reebok')">
+					<div>
+						<img src="img/brand/one.jpg" alt="">
+						<h2>Reebok</h2>
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" onclick="route('list?The North Face')">
+					<div>
+						<img src="img/brand/two.jpg" alt="">
+						<h2>The north face</h2>
+					</div>
+				</a>
+
+
+			</div>
+		</div>
+		<div class="man open_menu display0">
+			<div class="row_1">
+				<a href="javascript:void(0)" onclick="route('man')">
+					<h1>Все бренды</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals&Мужской')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?C.P. Company&Мужской')">C.P. Company</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Comme des Garcons SHIRT&Мужской')">Comme des Garcons SHIRT</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Edwin&Мужской')">Edwin</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Lacoste&Мужской')">Lacoste</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis&Мужской')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike&Мужской')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren&Мужской')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip&Мужской')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Stone Island&Мужской')">Stone Island</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face&Мужской')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?thisisneverthat&Мужской')">thisisneverthat</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans&Мужской')">Tommy Jeans</a></li>
+				</ul>
+			</div>
+			<div class="row_2">
+				<a href="javascript:void(0)" onclick="route('man')">
+					<h1>Все категории</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Кроссовки')">Кроссовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Ботинки')">Ботинки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Кеды')">Кеды</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Куртки')">Куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Свитера')">Свитера</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Толстовки')">Толстовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Рубашки')">Рубашки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Лонгсливы')">Лонгсливы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Поло')">Поло</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Футболки')">Футболки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Джинсы')">Джинсы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Брюки')">Брюки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Мужской&Шорты')">Шорты</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<a href="javascript:void(0)" onclick="route('brand?Мужской&Футболки')">
+					<div>
+						<img src="img/man/one.jpg" alt="">
+						<h2>Футболки</h2>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="route('brand?Мужской&Брюки')">
+					<div>
+						<img src="img/man/two.jpg" alt="">
+						<h2>Брюки</h2>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="route('brand?Мужской&Кроссовки')">
+					<div>
+						<img src="img/man/three.jpg" alt="">
+						<h2>Кроссовки</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="woman open_menu display0">
+			<div class="row_1">
+				<a href="javascript:void(0)" onclick="route('woman')">
+					<h1>Все бренды</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?adidas Originals&Женский')">adidas Originals</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Canada Goose&Женский')">Canada Goose</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Champion Reverse Weave&Женский')">Champion Reverse Weave</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Levis&Женский')">Levi's</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Maison Kitsune&Женский')">Maison Kitsune</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?MSGM&Женский')">MSGM</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike&Женский')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren&Женский')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Puma&Женский')">Puma</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Reebok&Женский')">Reebok</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?The North Face&Женский')">The North Face</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Tommy Jeans&Женский')">Tommy Jeans</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Y-3&Женский')">Y-3</a></li>
+				</ul>
+			</div>
+			<div class="row_2">
+				<a href="javascript:void(0)" onclick="route('woman')">
+					<h1>Все категории</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Кроссовки')">Кроссовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Ботинки')">Ботинки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Кеды')">Кеды</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Куртки')">Куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Джинсовые куртки')">Джинсовые куртки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Толстовки')">Толстовки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Олимпийки')">Олимпийки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Рубашки')">Рубашки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Лонгсливы')">Лонгсливы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Футболки')">Футболки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Джинсы')">Джинсы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Брюки')">Брюки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?Женский&Юбки')">Юбки</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<a href="javascript:void(0)" onclick="route('brand?Женский&Джинсы')">
+					<div>
+						<img src="img/woman/one.jpg" alt="">
+						<h2>Джинсы</h2>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="route('brand?Женский&Кроссовки')">
+					<div>
+						<img src="img/woman/two.jpg" alt="">
+						<h2>Кроссовки</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="acces open_menu display0">
+			<div class="row_1">
+				<a href="javascript:void(0)" onclick="route('unisex')">
+					<h1>Все бренды</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('list?Book Publishers&Унисекс')">Book Publishers</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Bubble Gum&Унисекс')">Bubble Gum</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?CASIO&Унисекс')">CASIO</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Daniel Wellington&Унисекс')">Daniel Wellington</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ligne Blanche&Унисекс')">Ligne Blanche</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Master-piece&Унисекс')">Master-piece</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Native Union&Унисекс')">Native Union</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Nike&Унисекс')">Nike</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Polo Ralph Lauren&Унисекс')">Polo Ralph Lauren</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ray-Ban&Унисекс')">Ray-Ban</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Ripndip&Унисекс')">Ripndip</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Timex&Унисекс')">Timex</a></li>
+					<li><a href="javascript:void(0)" onclick="route('list?Victorinox&Унисекс')">Victorinox</a></li>
+				</ul>
+			</div>
+			<div class="row_2">
+				<a href="javascript:void(0)" onclick="route('unisex')">
+					<h1>Все категории</h1>
+				</a>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Шапки')">Шапки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Шарфы')">Шарфы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Наручные часы')">Наручные часы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Солнцезащитные очки')">Солнцезащитные очки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кошельки')">Кошельки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Ремни')">Ремни</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Кепки')">Кепки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Панамы')">Панамы</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Нижнее бельё')">Нижнее белье</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Носки')">Носки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Сумки')">Сумки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Рюкзаки')">Рюкзаки</a></li>
+					<li><a href="javascript:void(0)" onclick="route('brand?All&Косметички')">Косметика</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<a href="javascript:void(0)" onclick="route('brand?All&Кепки')">
+					<div>
+						<img src="img/acces/one.jpg" alt="">
+						<h2>Кепки</h2>
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" onclick="route('brand?All&Наручные часы')">
+					<div>
+						<img src="img/acces/two.jpg" alt="">
+						<h2>Наручные часы</h2>
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" onclick="route('brand?All&Сумки')">
+					<div>
+						<img src="img/acces/three.jpg" alt="">
+						<h2>Сумки</h2>
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" onclick="route('brand?All&Солнцезащитные очки')">
+					<div>
+						<img src="img/acces/four.jpg" alt="">
+						<h2>Солнцезащитные очки</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="basket display0">
+		<div class="cont">
+			<!-- <div>
+			<div><img src="img/data/adidas/krosovki/1.jpg" alt=""></div>
+			<div>
+				<h1>adidas Originals</h1>
+				<p class="info">Кроссовки adidas Originals NMD_R1.V2 Core Black/Corsadada</p>
+				<p><span>– </span><span>2</span><span> +</span><span>41.5 EU</span></p>
+			</div>
+			<div>
+				<p>13 990P<div><span class="span1"></span><span class="span2"></span></div></p>
+			</div>
+		</div> -->
+		</div>
+		<!--<div class="butBasket">
+		<div>Оформить заказ</div>
+		<div>Общая стоимость:<span>4 111 Р</span></div>
+	</div> -->
+		<!--<div class="basketNul">
+		<h1>Корзина</h1>
+		<p>Вы пока что еще ничего не добавили в корзину</p>
+		<div>Перейти к новинкам</div>
+	</div>-->
+	</div>
+	<div class="faq">
+		<div>
+			<p>1. Доставка по Москве и регионы</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<h1>МОСКВА</h1>
+			<h2>Курьером (в пределах МКАД)</h2>
+			<ul>
+				<li>Доставка до двери. Если адрес за МКАД, но в пределах одного км. от станции метро;</li>
+				<li>Срок доставки 1-3 рабочих дня* с момента оформления заказа;</li>
+				<li>Бесплатная доставка — при единовременной покупке от 15 000 рублей, при покупке на меньшую сумму — 350 рублей;</li>
+				<li>Игрушки в размере 1000% — 1000 рублей в пределах МКАД;</li>
+				<li>Возможность выбора удобного для вас времени доставки;</li>
+				<li>Возможна примерка (в течение 15 минут). Доставим до четырёх пар обуви и до пяти единиц из других категорий.</li>
+			</ul>
+			<h2>Курьером до метро</h2>
+			<ul>
+				<li>Если адрес за МКАД и свыше одного км. от станции метро, курьер доставит заказ до ближайшей станции;</li>
+				<li>Срок доставки 1-3 рабочих дня* с момента оформления заказа;</li>
+				<li>Бесплатная доставка — при единовременной покупке от 15 000 рублей, при покупке на меньшую сумму — 350 рублей;</li>
+				<li>Игрушки в размере 1000% — 1000 рублей, вне зависимости от суммы покупки;</li>
+				<li>Возможность выбора удобного для вас времени доставки;</li>
+				<li>Возможна примерка (в течение 15 минут) . Доставим до четырёх пар обуви и до пяти единиц из других категорий.</li>
+			</ul>
+			<h2>Курьером СДЭК по Москве (в пределах МКАД)</h2>
+			<ul>
+				<li>Доставка осуществляется курьером СДЭК до двери;</li>
+				<li>Срок доставки ориентировочно 2-3 рабочих дня* с момента отправки заказа;</li>
+				<li>Стоимость доставки — 350 рублей вне зависимости от суммы покупки;</li>
+				<li>Возможна примерка (в течение 15 минут). Доставят до четырёх пар обуви и до пяти единиц из других категорий.</li>
+				<li>* — В период распродаж или дополнительных скидок срок обработки и доставки может быть незначительно увеличен.</li>
+			</ul>
+			<h2>Курьером СДЭК (за МКАД и в Подмосковье)</h2>
+			<ul>
+				<li>Доставка осуществляется курьером СДЭК до двери;</li>
+				<li>Срок доставки ориентировочно 3-4 рабочих дня* с момента отправки заказа;</li>
+				<li>Стоимость доставки — 600 рублей вне зависимости от суммы покупки;</li>
+				<li>Игрушки в размере 1000% — 1500 рублей за МКАД (до границы Московской области), вне зависимости от суммы покупки;</li>
+				<li>Возможна примерка (в течение 15 минут). Доставят до четырёх пар обуви и до пяти единиц из других категорий.</li>
+			</ul>
+			<h2>Самовывоз</h2>
+			<h2>Данный метод получения доступен только для предварительно оплаченных заказов.</h2>
+			<ul>
+				<li>Самовывоз осуществляется из магазина по адресу Каретный ряд, 8;</li>
+				<li>Для получения товара необходимо оформить заказ на сайте;</li>
+				<li>Сборка 1-2 дня с момента оформления заказа;</li>
+				<li>Получить заказ возможно только после поступления SMS-уведомления;</li>
+				<li>Возможна примерка;</li>
+				<li>Частичный выкуп возможен после полной отмены заказа;</li>
+				<li>Срок резерва составляет 2 календарных дня;</li>
+				<li>На данный способ доставки не распространяется применение промокодов. Исключением является промокод выданный ко Дню Рождения.</li>
+			</ul>
+			<h1>РОССИЯ</h1>
+			<h2>Почта России</h2>
+			<ul>
+				<li>Срок доставки ориентировочно 4-14 рабочих дней с момента отправления заказа (срок отправки заказа 1-2 дня, не считая дня поступления заказа);</li>
+				<li>Бесплатная доставка — при единовременной покупке от 8 000 рублей, при покупке на меньшую сумму — 490 рублей;</li>
+				<li>Возможность отслеживания посылки по трекинг-номеру;</li>
+				<li>Услуга примерки отсутствует.</li>
+			</ul>
+			<li>В случае не подошедшего товара, отправьте нам его обратно отдельной посылкой, заполнив и вложив <a href="./file/blank.pdf">бланк возврата</a>.</li>
+			<li>Подробнее с правилами обмена и возврата можете ознакомиться в разделе <a href="javascript:void(0)" onclick="route('faq/3')">«Возврат»</a>.</li>
+			<h2>EMS Russian Post</h2>
+			<ul>
+				<li>Срок доставки ориентировочно 2-7 рабочих дней с момента отправления заказа (срок отправки заказа 1-2 дня, не считая дня поступления заказа);</li>
+				<li>Стоимость доставки — 890 рублей;</li>
+				<li>Доставка по указанному адресу, до двери (по городу);</li>
+				<li>Возможность отслеживания посылки по трекинг-номеру;</li>
+				<li>Игрушки в размере 1000% — 2000 рублей, вне зависимости от суммы покупки;</li>
+				<li>Услуга примерки отсутствует.</li>
+			</ul>
+			<li>В случае не подошедшего товара, отправьте нам его обратно отдельной посылкой, заполнив и вложив <a href="./file/blank.pdf">бланк возврата</a>.</li>
+			<li>Подробнее с правилами обмена и возврата можете ознакомиться в разделе <a href="javascript:void(0)" onclick="route('faq/3')">«Возврат»</a>.</li>
+			<h2>СДЭК</h2>
+			<ul>
+				<li>Срок доставки ориентировочно 2-5 рабочих дней с момента отправления заказа (срок отправки заказа 1-2 дня, не считая дня поступления заказа);</li>
+				<li>Стоимость доставки — 690 рублей;</li>
+				<li>Доставка по указанному адресу, до двери;</li>
+				<li>Возможность отслеживания посылки по трекинг-номеру;</li>
+				<li>Игрушки в размере 1000% — 4500 рублей, вне зависимости от суммы покупки;</li>
+				<li>Услуга примерки отсутствует.</li>
+			</ul>
+			<li>В случае не подошедшего товара, отправьте нам его обратно отдельной посылкой, заполнив и вложив <a href="./file/blank.pdf">бланк возврата</a>.</li>
+			<li>Подробнее с правилами обмена и возврата можете ознакомиться в разделе <a href="javascript:void(0)" onclick="route('faq/3')">«Возврат»</a>.</li>
+		</ul>
+		<div>
+			<p>2. Доставка в Беларусь и Казахстан</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<h2>СДЭК Беларусь</h2>
+			<h2>Доставка доступна только для предварительно оплаченных заказов.</h2>
+			<ul>
+				<li>Срок доставки ориентировочно 2-5 рабочих дней с момента отправления заказа (срок отправки заказа 1-2 дня, не считая дня поступления заказа);</li>
+				<li>Стоимость доставки в Беларусь — 690 рублей;</li>
+				<li>Доставка по указанному адресу, до двери;</li>
+				<li>Возможность отслеживания посылки по трекинг-номеру;</li>
+				<li>Услуга примерки отсутствует.</li>
+			</ul>
+			<li>В случае не подошедшего товара, отправьте нам его обратно отдельной посылкой, заполнив и вложив <a href="./file/blank.pdf">бланк возврата</a>.</li>
+			<h2>СДЭК Казахстан</h2>
+			<h2>Доставка доступна только для предварительно оплаченных заказов.</h2>
+			<ul>
+				<li>Срок доставки ориентировочно 11-17 рабочих дней с момента отправления заказа (срок отправки заказа 1-2 дня, не считая дня поступления заказа);</li>
+				<li>Стоимость доставки в Казахстан — 1100 рублей;</li>
+				<li>Доставка по указанному адресу, до двери;</li>
+				<li>Возможность отслеживания посылки по трекинг-номеру;</li>
+				<li>Услуга примерки отсутствует.</li>
+			</ul>
+			<li>В случае не подошедшего товара, отправьте нам его обратно отдельной посылкой, заполнив и вложив <a href="./file/blank.pdf">бланк возврата</a>.</li>
+		</ul>
+		<div>
+			<p>3. Какие способы оплаты возможны?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<h1>МОСКВА</h1>
+			<h2>Электронные платежи</h2>
+			<li>Оплату заказа в Интернет-магазине принимаем банковскими картами систем Visa (включая Electron), MasterCard, Maestro, МИР.</li>
+			<h2>Наличные средства</h2>
+			<li>Оплата заказа производится наличными в рублях в магазине или курьеру, в момент передачи товара.</li>
+			<h2>Банковская карта</h2>
+			<li>В нашем розничном магазине, а также при курьерской доставке по Москве мы принимаем банковские карты платежных систем Visa (включая Electron), MasterCard и Maestro, МИР.</li>
+			<h2>Мультибонус ВТБ</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно бонусными рублями программы "Мультибонус" от Банка ВТБ.</li>
+			<li>Частичная оплата недоступна.</li>
+			<li>При оформлении заказа на сайте выберите Способ оплаты "Банковская карта", далее кликните "Мультибонус ВТБ".</li>
+			<li>При осуществлении возврата товара, бонусные рубли возвращаются в течение 14 дней. Возврат в другой валюте не производится.</li>
+			<h2>Долями</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно c помощью сервиса покупок "Долями".</li>
+			<li>При оформлении заказа на сайте выберите способ оплаты "Долями".</li>
+			<li>Необходимо указать номер телефона, данные банковской карты и оплатить 25% стоимости покупки. Оставшиеся 3 части спишутся автоматически с шагом в две недели.</li>
+			<h2>Yandex Pay</h2>
+			<li>Оплатить покупки в Интернет-магазине возможно c помощью платёжного сервиса Yandex Pay. Способ оплаты уже доступен при оформлении заказа на сайте.</li>
+			<li>Для совершения покупок необходима карта, привязанная к аккаунту на Яндексе, а имя, адрес и номер телефона подтянутся сами.</li>
+			<h2>Яндекс.Сплит</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно c помощью сервиса покупок "Яндекс.Сплит".</li>
+			<li>На странице товара, выбрав размер, кликните на кнопку "Быстро оформить с Yandex Pay", далее необходимо активировать тумблер «Оплатить частями», предварительно указав способ оплаты с помощью Банковской карты.</li>
+			<li>Необходимо оплатить первый платеж, а оставшиеся три Сплит будет автоматически списывать раз в две недели.</li>
+			<li>Для совершения покупок необходима карта, привязанная к аккаунту на Яндексе, а имя, адрес и номер телефона подтянутся сами.</li>
+			<h1>РОССИЯ</h1>
+			<h2>Электронные платежи</h2>
+			<li>Банковские карты систем Visa (включая Electron), MasterCard, Maestro, МИР.</li>
+			<li>Данные методы оплаты являются наиболее выгодным, так как при получении посылки вам не придется платить за услугу «Наложенный платеж».</li>
+			<h2>Наложенный платёж (наличными при получении посылки)</h2>
+			<li>Данный способ оплаты является экономически невыгодным и распространяется только на территории РФ.</li>
+			<li>Наложенный платеж подразумевает оплату при получении посылки в почтовом отделении или курьеру службы EMS либо СДЭК.</li>
+			<li>Комиссия за наложенный платёж составляет от 3% от суммы посылки (зависит от службы доставки) и не включается в итоговую стоимость заказа, рассчитанную на сайте.</li>
+			<li>Комиссия за наложенный платеж взымается при доставке Почтой России либо EMS Russian Post.</li>
+			<h2>Мультибонус ВТБ</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно бонусными рублями программы "Мультибонус" от Банка ВТБ.</li>
+			<li>Частичная оплата недоступна.</li>
+			<li>При оформлении заказа на сайте выберите Способ оплаты "Банковская карта", далее кликните "Мультибонус ВТБ".</li>
+			<li>При осуществлении возврата товара, бонусные рубли возвращаются в течение 14 дней. Возврат в другой валюте не производится.</li>
+			<h2>Долями</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно c помощью сервиса покупок "Долями".</li>
+			<li>При оформлении заказа на сайте выберите способ оплаты "Долями".</li>
+			<li>Необходимо указать номер телефона, данные банковской карты и оплатить 25% стоимости покупки. Оставшиеся 3 части спишутся автоматически с шагом в две недели.</li>
+			<h2>Yandex Pay</h2>
+			<li>Оплатить покупки в Интернет-магазине возможно c помощью платёжного сервиса Yandex Pay. Способ оплаты уже доступен при оформлении заказа на сайте.</li>
+			<li>Для совершения покупок необходима карта, привязанная к аккаунту на Яндексе, а имя, адрес и номер телефона подтянутся сами.</li>
+			<h2>Яндекс.Сплит</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно c помощью сервиса покупок "Яндекс.Сплит".</li>
+			<li>На странице товара, выбрав размер, кликните на кнопку "Быстро оформить с Yandex Pay", далее необходимо активировать тумблер «Оплатить частями», предварительно указав способ оплаты с помощью Банковской карты.</li>
+			<li>Необходимо оплатить первый платеж, а оставшиеся три Сплит будет автоматически списывать раз в две недели.</li>
+			<li>Для совершения покупок необходима карта, привязанная к аккаунту на Яндексе, а имя, адрес и номер телефона подтянутся сами.</li>
+			<h1>Беларусь и Казахстан</h1>
+			<h2>Банковская карта</h2>
+			<li>Заказы в Беларусь и Казахстан возможно оформить только по предоплате. Мы принимаем банковские карты платежных систем Visa (включая Electron), MasterCard и Maestro, МИР.</li>
+			<li>Отправка заказов в эти страны с оплатой при получении (наложенный платеж) невозможна.</li>
+			<h2>Мультибонус ВТБ</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно бонусными рублями программы "Мультибонус" от Банка ВТБ.</li>
+			<li>Частичная оплата недоступна.</li>
+			<li>При оформлении заказа на сайте выберите Способ оплаты "Банковская карта", далее кликните "Мультибонус ВТБ".</li>
+			<li>При осуществлении возврата товара, бонусные рубли возвращаются в течение 14 дней. Возврат в другой валюте не производится.</li>
+			<h2>Yandex Pay</h2>
+			<li>Оплатить покупки в Интернет-магазине возможно c помощью платёжного сервиса Yandex Pay. Способ оплаты уже доступен при оформлении заказа на сайте.</li>
+			<li>Для совершения покупок необходима карта, привязанная к аккаунту на Яндексе, а имя, адрес и номер телефона подтянутся сами.</li>
+			<h2>Яндекс.Сплит</h2>
+			<li>Оплатить покупку в Интернет-магазине возможно c помощью сервиса покупок "Яндекс.Сплит".</li>
+			<li>На странице товара, выбрав размер, кликните на кнопку "Быстро оформить с Yandex Pay", далее необходимо активировать тумблер «Оплатить частями», предварительно указав способ оплаты с помощью Банковской карты.</li>
+			<li>Необходимо оплатить первый платеж, а оставшиеся три Сплит будет автоматически списывать раз в две недели.</li>
+			<li>Для совершения покупок необходима карта, привязанная к аккаунту на Яндексе, а имя, адрес и номер телефона подтянутся сами.</li>
+		</ul>
+		<div>
+			<p>4. Можно оплатить товар при получении посылки?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>Вы можете оплатить товар при получении посылки, если сумма заказа не превышает 50 000 рублей.</li>
+			<li>Хотим заметить, что при получении посылки в России, данный вид оплаты является экономически невыгодным, т. к. вам придется дополнительно заплатить комиссию за услугу «Наложенный платеж» от 2% до 5% в зависимости от итоговой стоимости заказа. Советуем оплачивать заказ непосредственно на сайте банковской картой.</li>
+		</ul>
+		<div>
+			<p>5. Что такое «Наложенный платеж»?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>Наложенный платеж — сумма, которую адресат должен оплатить при получении посылки. После оплаты получателем, сумма наложенного платежа перечисляется отправителю денежным переводом.</li>
+			<li>Иными словами, наложенный платеж — возможность оплатить товар при получении в отделении Почты России либо курьеру, если доставка осуществляется EMS Russian Post или СДЭК.</li>
+			<li>Оплата при получении является экономически не выгодной, т. к. вам придется дополнительно заплатить комиссию за услугу «Наложенный платеж» до 2% от итоговой стоимости заказа, но не менее 25 рублей.</li>
+		</ul>
+		<div>
+			<p>6. Что делать, если пришел товар с браком/дефектом?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>Мы стараемся оперативно решить возникшую проблему. Пожалуйста, напишите нам письмо на <a href="mailto:store@brandshop.ru">store@brandshop.ru</a> с темой «Дефект/брак товара по заказу №», описав проблему, а также приложите несколько фотографий места дефекта. Укажите ваш телефон, он может понадобиться нашим специалистам для оперативной связи.</li>
+			<li>Нам потребуется некоторое время для изучения претензии, но мы сделаем всё возможное, чтобы решить ваш вопрос как можно быстрее.</li>
+		</ul>
+		<div>
+			<p>7. Когда будет собран и отправлен мой заказ?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>Мы прикладываем все возможные силы, чтобы вы как можно быстрее смогли получить заказанный товар.</li>
+			<li>Срок обработки и отправки заказа, как правило, составляет от одного до двух дней*, не считая дня поступления заказа.</li>
+			<li>Так же мы обращаем внимание на ваши пожелания к заказу, поэтому если необходима срочная доставка, просто сообщите об этом в комментариях к заказу, по возможности мы постараемся выполнить просьбу.</li>
+			<li>* — В период распродаж или дополнительных скидок срок обработки может быть незначительно увеличен.</li>
+		</ul>
+		<div>
+			<p>8. Заказ имеет статус «Упаковка» — что это значит?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>Данный статус означает, что заказ фактически уже отправлен, либо проходит процедуру отправки в нашем почтовом отделении.</li>
+			<li>Изменить заказ уже нельзя.</li>
+			<li>После фактической отправки заказа мы отправим вам уведомления в виде SMS и письма на электронную почту с указанием трекинг-номера.</li>
+		</ul>
+		<div>
+			<p>9. Как отследить свой заказ?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>Все почтовые курьерские службы, которыми мы отправляем заказы, предоставляют возможность отслеживать посылку в пути.</li>
+			<li>После фактической отправки заказа мы отправим вам уведомления в виде SMS и письма на электронную почту с указанием трекинг-номера.</li>
+		</ul>
+		<div>
+			<p>10. Как оплатить заказ банковской картой?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>При оформлении заказа, на шаге «Способ оплаты» выберите метод оплаты «Банковская карта». На последующем шаге оформления система автоматически перенаправит вас на страницу платёжной формы, где необходимо будет ввести данные карты и подтвердить платёж.</li>
+		</ul>
+		<div>
+			<p>11. Могу ли я заказать несколько размеров на примерку с курьерской доставкой по Москве и вернуть неподошедший размер?</p>
+			<div><span class="span1"></span><span class="span2"></span></div>
+		</div>
+		<ul>
+			<li>При выборе курьерской доставки по Москве (в пределах МКАД) вы можете выбрать несколько размеров одной вещи для примерки.</li>
+			<li>Из одной категории товаров можно выбрать не более четырех пар обуви и пяти размеров одной единицы товара, к примеру: четыре пары обуви и/или пять рубашек и/или пять толстовок и так далее.</li>
+			<li>Примерка осуществляется в присутствии курьера. В случае, если доступ курьера в помещение невозможен, Клиент оставляет залог в размере суммы заказа. На примерку отводится не более 15 минут.</li>
+		</ul>
+	</div>
+	<footer>
+		<div>
+			<h1 class="bot">Подписаться на новости</h1>
+			<input type="email" placeholder="Введите email">
+			<div>
+				<a href="https://vk.com/brandshop_ru" class="icon"><img src="img/footer/vk.svg" alt=""></a>
+				<a href="https://www.youtube.com/user/brandshoprus" class="icon"><img src="img/footer/youtobe.svg" alt=""></a>
+				<a href="https://t.me/brandshopru" class="icon"><img src="img/footer/telega.svg" alt=""></a>
+
+			</div>
+		</div>
+		<div class="bot"></div>
+		<div>
+			<h1>Интернет-магазин</h1>
+			<a href="tel:+74955445770">+7 (495) 544-57-70</a>
+			<a href="tel:+78007752834" class="bot">+7 (800) 775-28-34</a>
+			<h1>Адреса магазинов</h1>
+			<h2>Петровский бульвар, 21</h2>
+			<h2>Большая Полянка, 65/74 с3</h2>
+		</div>
+		<div>
+			<h1>Поддержка</h1>
+			<a href="javascript:void(0)" onclick="route('faq')">Помощь покупателю</a>
+			<a href="javascript:void(0)" onclick="route('faq/2')">Доставка и оплата</a>
+			<a href="javascript:void(0)" onclick="route('faq/3')">Возврат</a>
+			<a href="javascript:void(0)" onclick="route('faq/5')">Программа лояльности</a>
+		</div>
+		<div>
+			<h1>Информация</h1>
+			<a href="javascript:void(0)" onclick="route('contacts')">Контакты</a>
+			<a href="javascript:void(0)" onclick="route('address')">Магазины</a>
+		</div>
+
+	</footer>
+
+
+
+
+	<script src="./js/helpScroll.js" defer></script>
+	<script src="js/request.js" defer></script>
+	<script src="js/menu.js"></script>
+	<script src="js/basket.js"></script>
+</body>
+
+</html>

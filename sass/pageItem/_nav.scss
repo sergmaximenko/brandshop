@@ -1,4 +1,4 @@
-.list{
+.list {
 	padding: width(100px) width(195.5px) 0;
 	background-color: #f2f2f2;
 	display: flex;
@@ -6,14 +6,16 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	position: relative;
-	.navSort{
+
+	.navSort {
 		width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-	
+
 	}
-	.option{
+
+	.option {
 		background-color: #fff;
 		width: width(351px);
 	}

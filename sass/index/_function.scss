@@ -4,14 +4,20 @@ $height: 754px;
 $widthmob: 414px;
 $heightmob: 896px;
 
-@function width($n){
+@function width($n) {
 	@return ($n / $width) * 100vw;
-};
+}
 
-@function widthmob($n){
+;
+
+@function widthmob($n) {
 	@return ($n / $widthmob) * 100vw;
-};
+}
 
-@function heihgthmob($n){
+;
+
+@function heihgthmob($n) {
 	@return ($n / $heightmob) * 100vh;
-};
+}
+
+;

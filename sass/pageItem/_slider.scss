@@ -1,20 +1,37 @@
-.slider{
+.slider {
+	.owl-stage {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+
+	.owl-item {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+
 	margin-top: width(-65px);
 	padding-top: width(70px);
-	padding-bottom: width(130px);
+	padding-bottom: width(110px);
 	background-color: #f2f2f2;
-	z-index: 10!important;
-	h1{
+	z-index: 10 !important;
+
+	h1 {
 		text-align: center;
 		font-weight: 300;
 		font-size: width(18px);
-		margin: width(63px) 0 width(23px) 0; 
+		margin: width(63px) 0 width(23px) 0;
 	}
-	.owl-carousel{
+
+	.owl-carousel {
 		padding: 0 width(195.5px);
 		height: width(414px);
-		.owl-nav{
-			.owl-prev, .owl-next{
+
+		.owl-nav {
+
+			.owl-prev,
+			.owl-next {
 				font-size: width(25px);
 				border: width(1px) solid black;
 				border-radius: 50%;
@@ -22,74 +39,88 @@
 				height: width(32px);
 				margin-top: width(-20px);
 			}
-			.owl-prev{
+
+			.owl-prev {
 				margin-right: width(130px);
-				i{
+
+				i {
 					margin-left: width(-3px);
 					left: 35%;
 				}
 			}
-			.owl-next{
+
+			.owl-next {
 				margin-left: width(130px);
-				i{
+
+				i {
 					margin-left: width(3px);
 				}
 			}
 		}
-		.owl-dots{
+
+		.owl-dots {
 			margin-top: width(-30px);
 		}
-		.owl-dot span{
-			width: width(10px)!important;
-			height: width(10px)!important;	
+
+		.owl-dot span {
+			width: width(10px) !important;
+			height: width(10px) !important;
 		}
 	}
-	.item{
+
+	.item {
 		cursor: pointer;
 		width: width(264px);
 		height: width(390px);
-		margin: 0 width(24px) width(24px) 0;
+		margin: 0 0 width(24px) 0;
 		position: relative;
-		img{
+
+		img {
 			width: width(248px);
 			height: width(248px);
 		}
-		h1{
+
+		h1 {
 			font-size: width(14px);
 			line-height: width(14px);
 			margin: width(18px) 0 width(12px);
 			font-weight: 400;
 		}
-		p{
-			span:first-child{
+
+		p {
+			span:first-child {
 				margin-top: width(8px);
 			}
-			span{
+
+			span {
 				display: block;
 				text-align: center;
-				color: rgba(0,0,0,.4);
+				color: rgba(0, 0, 0, .4);
 				line-height: width(15px);
 				font-weight: 400;
 				font-size: width(12px);
 			}
 		}
-		h3{
+
+		h3 {
 			font-size: width(14px);
 			line-height: width(14px);
 			text-align: center;
 			margin-top: width(15px);
 			font-weight: 300;
 		}
-		.shadow{
+
+		.shadow {
 			position: absolute;
 			width: width(264px);
 			height: width(390px);
 			top: 0;
 			left: 0;
-			background: rgba(0,0,0,.1);
+			background: rgba(0, 0, 0, .1);
 			opacity: 0;
 			transition: opacity .1s;
-			&:hover{
+
+			&:hover {
 				opacity: 1;
 			}
 		}

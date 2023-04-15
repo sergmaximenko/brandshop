@@ -1,4 +1,0 @@
-[
-	{"id": "244", "brand": "Vans", "img": "../img/data/Vans/шн1.jpg", "type": "Шнурки", "model": "Laces 36cm", "price": "590", "sex": "Унисекс", "category": "Шнурки", "color": "Чёрный", "size": ["ONE SIZE"], "photo": ["../img/data/Vans/шн2.jpg"], "info":["Материал: 100% полиэстер","Страна-производитель: Мексика"]},
-	{"id": "245", "brand": "Vans", "img": "../img/data/Vans/ке1.jpg", "type": "Мужские кеды", "model": "UA SK8-Low", "price": "5889", "sex": "Мужской", "category": "Кеды", "color": "Чёрный", "size": ["9US"], "photo": ["../img/data/Vans/ке2.jpg","../img/data/Vans/ке3.jpg","../img/data/Vans/ке4.jpg","../img/data/Vans/ке5.jpg","../img/data/Vans/ке6.jpg","../img/data/Vans/ке7.jpg"], "info":["Материал: Верх - замша, текстиль; Подкладка - искусственная кожа, текстиль; Низ - резина","Страна-производитель: Камбоджа"]}
-]

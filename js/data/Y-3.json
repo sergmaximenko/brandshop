@@ -1,5 +1,0 @@
-[
-	{"id": "246", "brand": "Y-3", "img": "../img/data/Y3/шо1.jpg", "type": "Женские шорты", "model": "Classic Tech Silk", "price": "3890", "sex": "Женский", "category": "Шорты", "color": "Зелёный", "size": ["M"], "photo": ["../img/data/Y3/шо2.jpg"], "info":["Материал: 80% триацетат, 20% полиэстер","Страна-производитель: Китай"]},
-	{"id": "247", "brand": "Y-3", "img": "../img/data/Y3/бр1.jpg", "type": "Женские брюки", "model": "Classic Terry Cuffed", "price": "2890", "sex": "Женский", "category": "Брюки", "color": "Зелёный", "size": ["XS"], "photo": ["../img/data/Y3/бр2.jpg","../img/data/Y3/бр3.jpg"], "info":["Материал: 100% хлопок","Страна-производитель: Турция"]},
-	{"id": "261", "brand": "Y-3", "img": "../img/data/Y3/р1.jpg", "type": "Женская рубашка", "model": "Chapter 1 Short Sleeve", "price": "6990", "sex": "Женский", "category": "Рубашки", "color": "Чёрный", "size": ["M"], "photo": ["../img/data/Y3/р2.jpg","../img/data/Y3/р3.jpg"], "info":["Материал: 100% полиэстер","Страна-производитель: Китай"]}
-]
